@@ -1,0 +1,26 @@
+﻿idx,Category,Variable,Unit,FeliX_Var_Name,Definition,Tier
+1,Atmospheric Concentrations,Atmospheric Concentrations|CH4,ppb,Atmospheric Concentration CH4,atmospheric concentrations of CH4,1
+2,Atmospheric Concentrations,Atmospheric Concentrations|CO2,ppm,Atmospheric Concentration CO2,atmospheric concentrations of CO2,1
+49,Atmospheric Concentrations,Atmospheric Concentrations|N2O,ppb,Atmospheric Concentration N2O,atmospheric concentrations of N2O,2
+50,Carbon Cycle,Net Land to Atmosphere Flux|CH4,Mt CH4/yr,Total CH4 Emission in MTonCH4,"net flux of CH4 from the land to the atmosphere (not including AFOLU and other anthropogenic emissions). A positive value indicates release of CH4 from the land, a negative value indicates a net land uptake. ",2
+54,Carbon Cycle,Net Land to Atmosphere Flux|CO2,Mt CO2/yr,Net Land to Atmosphere Flux CO2,"net flux of CO2 from the land to the atmosphere (not including AFOLU and other anthropogenic emissions). A positive value indicates release of CO2 from the land, a negative value indicates a net land uptake. ",2
+59,Carbon Cycle,Net Ocean to Atmosphere Flux|CO2,Mt CO2/yr,Net Ocean to Atmosphere Flux CO2,"cumulative net flux of CO2 from the ocean to the atmosphere (not including anthropogenic emissions). A positive value indicates release of CO2 from the ocean, a negative value indicates a net ocean uptake. ",2
+70,Carbon Cycle,Carbon Pool|Atmosphere,Mt CO2,Carbon Pool Atmosphere,total amount of CO2 in the atmospheric carbon pool,2
+71,Carbon Cycle,Carbon Pool|Soil,Mt CO2,Carbon Pool Soil,total amount of CO2 in the soil carbon pool,2
+73,Carbon Cycle,Carbon Pool|Plant,Mt CO2,Carbon Pool Plant,total amount of CO2 in the plant carbon pool,2
+74,Carbon Cycle,Net Primary Productivity,Mt CO2/yr,Net Primary Productivity,global total net primary productivity,2
+88,Climate,Airborne Fraction|CO2,Dimensionless,Airborne Fraction,fraction of (cumulative) emitted CO2 which is still in the atmosphere,2
+89,Climate,Effective Climate Sensitivity,K,Climate Sensitivity to 2xCO2,"effective climate sensitivity over time, here defined as ECS_eff(t) = \Delta T(t) * RF2x / (RF(t) - dH/dt) where ECS_eff is effective climate sensitivity, \Delta T(t) is Surface Air Temperature Change, RF2x is radiative forcing due to a doubling of atmospheric CO2 concentrations, RF(t) is radiative forcing and dH/dt is the energy imbalance at the top of the atmosphere (likely equal to ocean heat uptake in most of our reduced complexity models)",2
+90,Climate,Effective Climate Feedback,W/m^2/K,Climate Feedback Parameter,"effective climate feedback over time, here defined as \lambda_eff(t) = (RF(t) - dH/dt) / \Delta T(t) where \lambda_eff is effective climate feedback, \Delta T(t) is Surface Air Temperature Change, RF(t) is radiative forcing and dH/dt is the energy imbalance at the top of the atmosphere (likely equal to ocean heat uptake in most of our reduced complexity models)",2
+91,Climate,Heat Uptake,ZJ/yr,Heat Uptake,"total Heat Uptake of the Earth System (ZJ is zetta joules i.e. 10^21J), equivalent to the the energy imbalance at the top of the atmosphere. ",1
+96,Climate,Heat Content|Ocean,ZJ,Heat Content Ocean,total ocean heat content,2
+97,Climate,Heat Content|Ocean|0-700m,ZJ,Heat Content 0 700m,ocean heat content between 0 and 700m,2
+98,Climate,Heat Content|Ocean|700-2000m,ZJ,Heat Content 700 2000m,ocean heat content between 700 and 2000m,2
+100,Climate,Surface Air Ocean Blended Temperature Change,K,Temperature Change from Preindustrial,change in blended surface air/ocean tempertaure (i.e. quantity which is directly comparable with observational datasets e.g. HadCRUT4 or best proxy thereof). Please note reference period in comment sheet. ,2
+107,Effective Radiative Forcing,Effective Radiative Forcing,W/m^2,Total Radiative Forcing,effective radiative forcing from all anthropogenic and natural sources (after stratospheric temperature adjustments and rapid adjustments) ,1
+144,Effective Radiative Forcing,Effective Radiative Forcing|Anthropogenic|CH4,W/m^2,CH4 Radiative Forcing New,effective radiative forcing (after stratospheric temperature adjustments and rapid adjustments) of CH4,2
+145,Effective Radiative Forcing,Effective Radiative Forcing|Anthropogenic|CO2,W/m^2,CO2 Radiative Forcing New,effective radiative forcing (after stratospheric temperature adjustments and rapid adjustments) of CO2,1
+191,Effective Radiative Forcing,Effective Radiative Forcing|Anthropogenic|N2O,W/m^2,N2O Radiative Forcing New,effective radiative forcing (after stratospheric temperature adjustments and rapid adjustments) of N2O,2
+192,Effective Radiative Forcing,Effective Radiative Forcing|Anthropogenic|Other,W/m^2,Other Forcings,effective radiative forcing from factors not covered in other categories (after stratospheric temperature adjustments and rapid adjustments) ,2
+287,Methane Cycle,Atmospheric Lifetime|CH4,yr,Atmospheric Lifetime of CH4,total atmospheric lifetime of methane,3
+288,Nitrogen Cycle,Atmospheric Lifetime|N2O,yr,Atmospheric Lifetime of N2O,total atmospheric lifetime of nitrogen,3
