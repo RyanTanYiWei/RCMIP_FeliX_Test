@@ -1,0 +1,96 @@
+Baseline Natural Flux
+0 1.99512e+07
+Atmospheric Lifetime of N2O
+0 103.576
+Effective Sensitivity of Temperature on N2O Flux
+0 0
+Payoff
+0 -13869.3
+Best_Payoff
+0 -13869.3
+Simulations
+0 88
+Baseline Natural Flux
+1 2e+07
+Atmospheric Lifetime of N2O
+1 103.369
+Effective Sensitivity of Temperature on N2O Flux
+1 0
+Payoff
+1 -13851
+Best_Payoff
+1 -13851
+Simulations
+1 180
+Baseline Natural Flux
+2 1.99852e+07
+Atmospheric Lifetime of N2O
+2 103.431
+Effective Sensitivity of Temperature on N2O Flux
+2 0
+Payoff
+2 -13856.3
+Simulations
+2 411
+Baseline Natural Flux
+3 2e+07
+Atmospheric Lifetime of N2O
+3 103.512
+Effective Sensitivity of Temperature on N2O Flux
+3 0
+Payoff
+3 -13978.7
+Simulations
+3 607
+Baseline Natural Flux
+4 1.99576e+07
+Atmospheric Lifetime of N2O
+4 103.554
+Effective Sensitivity of Temperature on N2O Flux
+4 0
+Payoff
+4 -13867.2
+Simulations
+4 708
+Baseline Natural Flux
+5 2e+07
+Atmospheric Lifetime of N2O
+5 103.312
+Effective Sensitivity of Temperature on N2O Flux
+5 0
+Payoff
+5 -13862.5
+Simulations
+5 831
+Baseline Natural Flux
+6 2e+07
+Atmospheric Lifetime of N2O
+6 103.348
+Effective Sensitivity of Temperature on N2O Flux
+6 1.69407e-21
+Payoff
+6 -13851.1
+Simulations
+6 1027
+Baseline Natural Flux
+7 2e+07
+Atmospheric Lifetime of N2O
+7 103.348
+Effective Sensitivity of Temperature on N2O Flux
+7 0
+Payoff
+7 -13851.1
+Simulations
+7 1248
+Baseline Natural Flux
+8 2e+07
+Atmospheric Lifetime of N2O
+8 103.359
+Effective Sensitivity of Temperature on N2O Flux
+8 0
+Payoff
+8 -13850.5
+Best_Payoff
+8 -13850.5
+Simulations
+8 1330

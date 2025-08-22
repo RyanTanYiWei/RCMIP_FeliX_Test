@@ -1,0 +1,10 @@
+Start	Message	Baseline Natural Flux	Atmospheric Lifetime of N2O	Effective Sensitivity of Temperature on N2O Flux	PAYOFF	
+0	BEST	       6e+06	          50	           0	         -6.5833e+07	
+1	OK	       6e+06	          50	        0.04	        -6.49871e+07	
+2	OK	       6e+06	         130	           0	        -1.08731e+07	
+3	OK	       6e+06	         130	        0.04	        -1.03582e+07	
+4	OK	       2e+07	          50	           0	        -2.76199e+07	
+5	OK	       2e+07	          50	        0.04	        -2.58108e+07	
+6	OK	       2e+07	         130	           0	        -3.04761e+06	
+7	OK	       2e+07	         130	        0.04	        -4.08785e+06	
+8	OK	       6e+06	          50	        0.02	        -6.54092e+07	

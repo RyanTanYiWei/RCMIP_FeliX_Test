@@ -1,0 +1,2542 @@
+Best Payoff
+1 3460585.2
+Best Payoff
+3 205500.96
+Improvement
+3 3255084.3
+Best Payoff
+30 185845.37
+Improvement
+30 19655.587
+Best Payoff
+30 102890.21
+Improvement
+30 82955.164
+Best Payoff
+70 94192.888
+Improvement
+70 8697.3211
+Best Payoff
+100 91451.576
+Improvement
+100 2741.3126
+Best Payoff
+100 65438.09
+Improvement
+100 26013.486
+Best Payoff
+160 60422.686
+Improvement
+160 5015.4038
+Best Payoff
+210 57481.681
+Improvement
+210 2941.0049
+Is_outlier[Chain_2]
+210 108534.88
+Mean_accept_rt
+210 0.26315789
+Btw_chains_mean_Baseline Natural Flux
+210 11680826
+Btw_chains_mean_Atmospheric Lifetime of N2O
+210 169.84794
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+210 0.033035538
+Btw_chains_mean_Payoff
+210 -304956.08
+Btw_chains_var_Baseline Natural Flux
+210 1.7682321e+12
+Btw_chains_var_Atmospheric Lifetime of N2O
+210 222.29272
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+210 0.00026917044
+Btw_chains_var_Payoff
+210 -2.5587357e+10
+Wth_chains_mean_var_Baseline Natural Flux
+210 3.1664307e+12
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+210 358.03247
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+210 0.00025701996
+Wth_chains_mean_var_Payoff
+210 -9.9431701e+11
+PSRF_Baseline Natural Flux
+210 1.5479044
+PSRF_Atmospheric Lifetime of N2O
+210 1.6103468
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+210 2.0367482
+PSRF_Payoff
+210 -1.0152073
+Accept_rt[Chain_0]
+210 0.26315789
+Accepted[Chain_0]
+210 5
+Rejected[Chain_0]
+210 14
+Accept_rt[Chain_1]
+210 0.31578947
+Accepted[Chain_1]
+210 6
+Rejected[Chain_1]
+210 13
+Accept_rt[Chain_2]
+210 0.15789474
+Accepted[Chain_2]
+210 3
+Rejected[Chain_2]
+210 16
+Accept_rt[Chain_3]
+210 0.42105263
+Accepted[Chain_3]
+210 8
+Rejected[Chain_3]
+210 11
+Accept_rt[Chain_4]
+210 0.21052632
+Accepted[Chain_4]
+210 4
+Rejected[Chain_4]
+210 15
+Accept_rt[Chain_5]
+210 0.21052632
+Accepted[Chain_5]
+210 4
+Rejected[Chain_5]
+210 15
+Accept_rt[Chain_6]
+210 0.21052632
+Accepted[Chain_6]
+210 4
+Rejected[Chain_6]
+210 15
+Accept_rt[Chain_7]
+210 0.26315789
+Accepted[Chain_7]
+210 5
+Rejected[Chain_7]
+210 14
+Accept_rt[Chain_8]
+210 0.31578947
+Accepted[Chain_8]
+210 6
+Rejected[Chain_8]
+210 13
+Accept_rt[Chain_9]
+210 0.26315789
+Accepted[Chain_9]
+210 5
+Rejected[Chain_9]
+210 14
+Best Payoff
+300 56225.399
+Improvement
+300 1256.2821
+Best Payoff
+320 55788.087
+Improvement
+320 437.31227
+Best Payoff
+340 55331.714
+Improvement
+340 456.37298
+Best Payoff
+410 55317.841
+Improvement
+410 13.872983
+Is_outlier[Chain_2]
+420 67314.146
+Mean_accept_rt
+420 0.2
+Btw_chains_mean_Baseline Natural Flux
+420 10495953
+Btw_chains_mean_Atmospheric Lifetime of N2O
+420 183.86907
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+420 0.044974683
+Btw_chains_mean_Payoff
+420 -116675.08
+Btw_chains_var_Baseline Natural Flux
+420 5.8069675e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+420 69.67577
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+420 0.00019424383
+Btw_chains_var_Payoff
+420 -1.2028889e+09
+Wth_chains_mean_var_Baseline Natural Flux
+420 1.4866768e+12
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+420 186.74107
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+420 0.00018738677
+Wth_chains_mean_var_Payoff
+420 -2.3591382e+11
+PSRF_Baseline Natural Flux
+420 1.3856005
+PSRF_Atmospheric Lifetime of N2O
+420 1.3681143
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+420 2.0315931
+PSRF_Payoff
+420 -1.0000988
+Accept_rt[Chain_0]
+420 0.175
+Accepted[Chain_0]
+420 7
+Rejected[Chain_0]
+420 33
+Accept_rt[Chain_1]
+420 0.15
+Accepted[Chain_1]
+420 6
+Rejected[Chain_1]
+420 34
+Accept_rt[Chain_2]
+420 0.175
+Accepted[Chain_2]
+420 7
+Rejected[Chain_2]
+420 33
+Accept_rt[Chain_3]
+420 0.3
+Accepted[Chain_3]
+420 12
+Rejected[Chain_3]
+420 28
+Accept_rt[Chain_4]
+420 0.175
+Accepted[Chain_4]
+420 7
+Rejected[Chain_4]
+420 33
+Accept_rt[Chain_5]
+420 0.15
+Accepted[Chain_5]
+420 6
+Rejected[Chain_5]
+420 34
+Accept_rt[Chain_6]
+420 0.2
+Accepted[Chain_6]
+420 8
+Rejected[Chain_6]
+420 32
+Accept_rt[Chain_7]
+420 0.225
+Accepted[Chain_7]
+420 9
+Rejected[Chain_7]
+420 31
+Accept_rt[Chain_8]
+420 0.275
+Accepted[Chain_8]
+420 11
+Rejected[Chain_8]
+420 29
+Accept_rt[Chain_9]
+420 0.175
+Accepted[Chain_9]
+420 7
+Rejected[Chain_9]
+420 33
+Is_outlier[Chain_2]
+650 62695.051
+Mean_accept_rt
+650 0.16190476
+Btw_chains_mean_Baseline Natural Flux
+650 10098832
+Btw_chains_mean_Atmospheric Lifetime of N2O
+650 188.20711
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+650 0.05166439
+Btw_chains_mean_Payoff
+650 -81549.114
+Btw_chains_var_Baseline Natural Flux
+650 3.7835994e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+650 55.590156
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+650 8.7239789e-05
+Btw_chains_var_Payoff
+650 -2.0863431e+08
+Wth_chains_mean_var_Baseline Natural Flux
+650 7.4800133e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+650 95.110178
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+650 0.00013318618
+Wth_chains_mean_var_Payoff
+650 -9.5554311e+10
+PSRF_Baseline Natural Flux
+650 1.5026533
+PSRF_Atmospheric Lifetime of N2O
+650 1.5813071
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+650 1.6518467
+PSRF_Payoff
+650 -0.99900881
+Accept_rt[Chain_0]
+650 0.12698413
+Accepted[Chain_0]
+650 8
+Rejected[Chain_0]
+650 55
+Accept_rt[Chain_1]
+650 0.15873016
+Accepted[Chain_1]
+650 10
+Rejected[Chain_1]
+650 53
+Accept_rt[Chain_2]
+650 0.17460317
+Accepted[Chain_2]
+650 11
+Rejected[Chain_2]
+650 52
+Accept_rt[Chain_3]
+650 0.20634921
+Accepted[Chain_3]
+650 13
+Rejected[Chain_3]
+650 50
+Accept_rt[Chain_4]
+650 0.19047619
+Accepted[Chain_4]
+650 12
+Rejected[Chain_4]
+650 51
+Accept_rt[Chain_5]
+650 0.11111111
+Accepted[Chain_5]
+650 7
+Rejected[Chain_5]
+650 56
+Accept_rt[Chain_6]
+650 0.19047619
+Accepted[Chain_6]
+650 12
+Rejected[Chain_6]
+650 51
+Accept_rt[Chain_7]
+650 0.17460317
+Accepted[Chain_7]
+650 11
+Rejected[Chain_7]
+650 52
+Accept_rt[Chain_8]
+650 0.17460317
+Accepted[Chain_8]
+650 11
+Rejected[Chain_8]
+650 52
+Accept_rt[Chain_9]
+650 0.11111111
+Accepted[Chain_9]
+650 7
+Rejected[Chain_9]
+650 56
+Is_outlier[Chain_2]
+890 62686.541
+Is_outlier[Chain_7]
+890 58132.787
+Mean_accept_rt
+890 0.14482759
+Btw_chains_mean_Baseline Natural Flux
+890 9886962.2
+Btw_chains_mean_Atmospheric Lifetime of N2O
+890 190.89391
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+890 0.054887122
+Btw_chains_mean_Payoff
+890 -69734.932
+Btw_chains_var_Baseline Natural Flux
+890 3.2873931e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+890 53.2107
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+890 4.0186534e-05
+Btw_chains_var_Payoff
+890 -59172799
+Wth_chains_mean_var_Baseline Natural Flux
+890 4.6061065e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+890 62.456323
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+890 9.1790691e-05
+Wth_chains_mean_var_Payoff
+890 -5.0128253e+10
+PSRF_Baseline Natural Flux
+890 1.7114044
+PSRF_Atmospheric Lifetime of N2O
+890 1.8496677
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+890 1.4355074
+PSRF_Payoff
+890 -0.99888158
+Accept_rt[Chain_0]
+890 0.10344828
+Accepted[Chain_0]
+890 9
+Rejected[Chain_0]
+890 78
+Accept_rt[Chain_1]
+890 0.14942529
+Accepted[Chain_1]
+890 13
+Rejected[Chain_1]
+890 74
+Accept_rt[Chain_2]
+890 0.13793103
+Accepted[Chain_2]
+890 12
+Rejected[Chain_2]
+890 75
+Accept_rt[Chain_3]
+890 0.2183908
+Accepted[Chain_3]
+890 19
+Rejected[Chain_3]
+890 68
+Accept_rt[Chain_4]
+890 0.16091954
+Accepted[Chain_4]
+890 14
+Rejected[Chain_4]
+890 73
+Accept_rt[Chain_5]
+890 0.091954023
+Accepted[Chain_5]
+890 8
+Rejected[Chain_5]
+890 79
+Accept_rt[Chain_6]
+890 0.17241379
+Accepted[Chain_6]
+890 15
+Rejected[Chain_6]
+890 72
+Accept_rt[Chain_7]
+890 0.18390805
+Accepted[Chain_7]
+890 16
+Rejected[Chain_7]
+890 71
+Accept_rt[Chain_8]
+890 0.12643678
+Accepted[Chain_8]
+890 11
+Rejected[Chain_8]
+890 76
+Accept_rt[Chain_9]
+890 0.10344828
+Accepted[Chain_9]
+890 9
+Rejected[Chain_9]
+890 78
+Best Payoff
+970 55314.977
+Improvement
+970 2.8637323
+Best Payoff
+1040 55304.114
+Improvement
+1040 10.86313
+Is_outlier[Chain_2]
+1140 61152.933
+Mean_accept_rt
+1140 0.14375
+Btw_chains_mean_Baseline Natural Flux
+1140 9739906.3
+Btw_chains_mean_Atmospheric Lifetime of N2O
+1140 192.9053
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+1140 0.056616762
+Btw_chains_mean_Payoff
+1140 -64347.839
+Btw_chains_var_Baseline Natural Flux
+1140 2.9883591e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+1140 52.215394
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+1140 1.9575376e-05
+Btw_chains_var_Payoff
+1140 -21190415
+Wth_chains_mean_var_Baseline Natural Flux
+1140 3.2329318e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+1140 46.356117
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+1140 6.5247088e-05
+Wth_chains_mean_var_Payoff
+1140 -3.0238748e+10
+PSRF_Baseline Natural Flux
+1140 1.9225639
+PSRF_Atmospheric Lifetime of N2O
+1140 2.1246113
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+1140 1.2982334
+PSRF_Payoff
+1140 -0.99891506
+Accept_rt[Chain_0]
+1140 0.10714286
+Accepted[Chain_0]
+1140 12
+Rejected[Chain_0]
+1140 100
+Accept_rt[Chain_1]
+1140 0.15178571
+Accepted[Chain_1]
+1140 17
+Rejected[Chain_1]
+1140 95
+Accept_rt[Chain_2]
+1140 0.16964286
+Accepted[Chain_2]
+1140 19
+Rejected[Chain_2]
+1140 93
+Accept_rt[Chain_3]
+1140 0.22321429
+Accepted[Chain_3]
+1140 25
+Rejected[Chain_3]
+1140 87
+Accept_rt[Chain_4]
+1140 0.13392857
+Accepted[Chain_4]
+1140 15
+Rejected[Chain_4]
+1140 97
+Accept_rt[Chain_5]
+1140 0.080357143
+Accepted[Chain_5]
+1140 9
+Rejected[Chain_5]
+1140 103
+Accept_rt[Chain_6]
+1140 0.15178571
+Accepted[Chain_6]
+1140 17
+Rejected[Chain_6]
+1140 95
+Accept_rt[Chain_7]
+1140 0.20535714
+Accepted[Chain_7]
+1140 23
+Rejected[Chain_7]
+1140 89
+Accept_rt[Chain_8]
+1140 0.098214286
+Accepted[Chain_8]
+1140 11
+Rejected[Chain_8]
+1140 101
+Accept_rt[Chain_9]
+1140 0.11607143
+Accepted[Chain_9]
+1140 13
+Rejected[Chain_9]
+1140 99
+Is_outlier[Chain_2]
+1400 60548.49
+Is_outlier[Chain_3]
+1400 55908.744
+Mean_accept_rt
+1400 0.1326087
+Btw_chains_mean_Baseline Natural Flux
+1400 9650452.9
+Btw_chains_mean_Atmospheric Lifetime of N2O
+1400 194.11914
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+1400 0.057651123
+Btw_chains_mean_Payoff
+1400 -61482.225
+Btw_chains_var_Baseline Natural Flux
+1400 2.6469291e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+1400 48.916522
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+1400 9.9231923e-06
+Btw_chains_var_Payoff
+1400 -9077853.8
+Wth_chains_mean_var_Baseline Natural Flux
+1400 2.3635553e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+1400 34.536464
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+1400 4.8010288e-05
+Wth_chains_mean_var_Payoff
+1400 -1.9908788e+10
+PSRF_Baseline Natural Flux
+1400 2.1184438
+PSRF_Atmospheric Lifetime of N2O
+1400 2.4149239
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+1400 1.2052396
+PSRF_Payoff
+1400 -0.9990067
+Accept_rt[Chain_0]
+1400 0.086956522
+Accepted[Chain_0]
+1400 12
+Rejected[Chain_0]
+1400 126
+Accept_rt[Chain_1]
+1400 0.13043478
+Accepted[Chain_1]
+1400 18
+Rejected[Chain_1]
+1400 120
+Accept_rt[Chain_2]
+1400 0.18115942
+Accepted[Chain_2]
+1400 25
+Rejected[Chain_2]
+1400 113
+Accept_rt[Chain_3]
+1400 0.1884058
+Accepted[Chain_3]
+1400 26
+Rejected[Chain_3]
+1400 112
+Accept_rt[Chain_4]
+1400 0.12318841
+Accepted[Chain_4]
+1400 17
+Rejected[Chain_4]
+1400 121
+Accept_rt[Chain_5]
+1400 0.072463768
+Accepted[Chain_5]
+1400 10
+Rejected[Chain_5]
+1400 128
+Accept_rt[Chain_6]
+1400 0.13043478
+Accepted[Chain_6]
+1400 18
+Rejected[Chain_6]
+1400 120
+Accept_rt[Chain_7]
+1400 0.19565217
+Accepted[Chain_7]
+1400 27
+Rejected[Chain_7]
+1400 111
+Accept_rt[Chain_8]
+1400 0.094202899
+Accepted[Chain_8]
+1400 13
+Rejected[Chain_8]
+1400 125
+Accept_rt[Chain_9]
+1400 0.12318841
+Accepted[Chain_9]
+1400 17
+Rejected[Chain_9]
+1400 121
+Is_outlier[Chain_2]
+1670 59832.254
+Is_outlier[Chain_3]
+1670 55891.086
+Mean_accept_rt
+1670 0.12484848
+Btw_chains_mean_Baseline Natural Flux
+1670 9589188.2
+Btw_chains_mean_Atmospheric Lifetime of N2O
+1670 194.93989
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+1670 0.058251374
+Btw_chains_mean_Payoff
+1670 -59798.734
+Btw_chains_var_Baseline Natural Flux
+1670 2.3020217e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+1670 44.126339
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+1670 5.8032936e-06
+Btw_chains_var_Payoff
+1670 -4575119
+Wth_chains_mean_var_Baseline Natural Flux
+1670 1.8173335e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+1670 26.815347
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+1670 3.5622349e-05
+Wth_chains_mean_var_Payoff
+1670 -1.3919823e+10
+PSRF_Baseline Natural Flux
+1670 2.2654908
+PSRF_Atmospheric Lifetime of N2O
+1670 2.6443507
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+1670 1.1616995
+PSRF_Payoff
+1670 -0.99911656
+Accept_rt[Chain_0]
+1670 0.084848485
+Accepted[Chain_0]
+1670 14
+Rejected[Chain_0]
+1670 151
+Accept_rt[Chain_1]
+1670 0.13333333
+Accepted[Chain_1]
+1670 22
+Rejected[Chain_1]
+1670 143
+Accept_rt[Chain_2]
+1670 0.2
+Accepted[Chain_2]
+1670 33
+Rejected[Chain_2]
+1670 132
+Accept_rt[Chain_3]
+1670 0.16363636
+Accepted[Chain_3]
+1670 27
+Rejected[Chain_3]
+1670 138
+Accept_rt[Chain_4]
+1670 0.1030303
+Accepted[Chain_4]
+1670 17
+Rejected[Chain_4]
+1670 148
+Accept_rt[Chain_5]
+1670 0.072727273
+Accepted[Chain_5]
+1670 12
+Rejected[Chain_5]
+1670 153
+Accept_rt[Chain_6]
+1670 0.10909091
+Accepted[Chain_6]
+1670 18
+Rejected[Chain_6]
+1670 147
+Accept_rt[Chain_7]
+1670 0.2
+Accepted[Chain_7]
+1670 33
+Rejected[Chain_7]
+1670 132
+Accept_rt[Chain_8]
+1670 0.078787879
+Accepted[Chain_8]
+1670 13
+Rejected[Chain_8]
+1670 152
+Accept_rt[Chain_9]
+1670 0.1030303
+Accepted[Chain_9]
+1670 17
+Rejected[Chain_9]
+1670 148
+Best Payoff
+1890 55304.046
+Improvement
+1890 0.067604292
+Is_outlier[Chain_2]
+1960 58771.965
+Is_outlier[Chain_3]
+1960 55850.91
+Mean_accept_rt
+1960 0.12371134
+Btw_chains_mean_Baseline Natural Flux
+1960 9539426.3
+Btw_chains_mean_Atmospheric Lifetime of N2O
+1960 195.61092
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+1960 0.058645202
+Btw_chains_mean_Payoff
+1960 -58686.003
+Btw_chains_var_Baseline Natural Flux
+1960 1.8963282e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+1960 37.503764
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+1960 3.7000714e-06
+Btw_chains_var_Payoff
+1960 -2585560.7
+Wth_chains_mean_var_Baseline Natural Flux
+1960 1.4977444e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+1960 22.362813
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+1960 2.6744353e-05
+Wth_chains_mean_var_Payoff
+1960 -1.0065004e+10
+PSRF_Baseline Natural Flux
+1960 2.2650918
+PSRF_Atmospheric Lifetime of N2O
+1960 2.6760284
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+1960 1.1373187
+PSRF_Payoff
+1960 -0.99922596
+Accept_rt[Chain_0]
+1960 0.082474227
+Accepted[Chain_0]
+1960 16
+Rejected[Chain_0]
+1960 178
+Accept_rt[Chain_1]
+1960 0.1185567
+Accepted[Chain_1]
+1960 23
+Rejected[Chain_1]
+1960 171
+Accept_rt[Chain_2]
+1960 0.2371134
+Accepted[Chain_2]
+1960 46
+Rejected[Chain_2]
+1960 148
+Accept_rt[Chain_3]
+1960 0.17010309
+Accepted[Chain_3]
+1960 33
+Rejected[Chain_3]
+1960 161
+Accept_rt[Chain_4]
+1960 0.092783505
+Accepted[Chain_4]
+1960 18
+Rejected[Chain_4]
+1960 176
+Accept_rt[Chain_5]
+1960 0.067010309
+Accepted[Chain_5]
+1960 13
+Rejected[Chain_5]
+1960 181
+Accept_rt[Chain_6]
+1960 0.10824742
+Accepted[Chain_6]
+1960 21
+Rejected[Chain_6]
+1960 173
+Accept_rt[Chain_7]
+1960 0.17525773
+Accepted[Chain_7]
+1960 34
+Rejected[Chain_7]
+1960 160
+Accept_rt[Chain_8]
+1960 0.077319588
+Accepted[Chain_8]
+1960 15
+Rejected[Chain_8]
+1960 179
+Accept_rt[Chain_9]
+1960 0.10824742
+Accepted[Chain_9]
+1960 21
+Rejected[Chain_9]
+1960 173
+Best Payoff
+2240 55304.004
+Improvement
+2240 0.042476069
+Is_outlier[Chain_2]
+2260 57012.183
+Is_outlier[Chain_3]
+2260 55791.985
+Mean_accept_rt
+2260 0.12142857
+Btw_chains_mean_Baseline Natural Flux
+2260 9496663.8
+Btw_chains_mean_Atmospheric Lifetime of N2O
+2260 196.18974
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+2260 0.058909261
+Btw_chains_mean_Payoff
+2260 -57930.495
+Btw_chains_var_Baseline Natural Flux
+2260 1.4854036e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+2260 30.18032
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+2260 2.5451559e-06
+Btw_chains_var_Payoff
+2260 -1612773.3
+Wth_chains_mean_var_Baseline Natural Flux
+2260 1.3509964e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+2260 20.667169
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+2260 2.0561486e-05
+Wth_chains_mean_var_Payoff
+2260 -7.5468903e+09
+PSRF_Baseline Natural Flux
+2260 2.0985946
+PSRF_Atmospheric Lifetime of N2O
+2260 2.4594097
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+2260 1.1228898
+PSRF_Payoff
+2260 -0.99932084
+Accept_rt[Chain_0]
+2260 0.075892857
+Accepted[Chain_0]
+2260 17
+Rejected[Chain_0]
+2260 207
+Accept_rt[Chain_1]
+2260 0.10714286
+Accepted[Chain_1]
+2260 24
+Rejected[Chain_1]
+2260 200
+Accept_rt[Chain_2]
+2260 0.27232143
+Accepted[Chain_2]
+2260 61
+Rejected[Chain_2]
+2260 163
+Accept_rt[Chain_3]
+2260 0.17857143
+Accepted[Chain_3]
+2260 40
+Rejected[Chain_3]
+2260 184
+Accept_rt[Chain_4]
+2260 0.084821429
+Accepted[Chain_4]
+2260 19
+Rejected[Chain_4]
+2260 205
+Accept_rt[Chain_5]
+2260 0.058035714
+Accepted[Chain_5]
+2260 13
+Rejected[Chain_5]
+2260 211
+Accept_rt[Chain_6]
+2260 0.098214286
+Accepted[Chain_6]
+2260 22
+Rejected[Chain_6]
+2260 202
+Accept_rt[Chain_7]
+2260 0.15625
+Accepted[Chain_7]
+2260 35
+Rejected[Chain_7]
+2260 189
+Accept_rt[Chain_8]
+2260 0.089285714
+Accepted[Chain_8]
+2260 20
+Rejected[Chain_8]
+2260 204
+Accept_rt[Chain_9]
+2260 0.09375
+Accepted[Chain_9]
+2260 21
+Rejected[Chain_9]
+2260 203
+Is_outlier[Chain_2]
+2580 55771.157
+Is_outlier[Chain_3]
+2580 55741.871
+Mean_accept_rt
+2580 0.11640625
+Btw_chains_mean_Baseline Natural Flux
+2580 9451769.1
+Btw_chains_mean_Atmospheric Lifetime of N2O
+2580 196.81347
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+2580 0.059101689
+Btw_chains_mean_Payoff
+2580 -57359.97
+Btw_chains_var_Baseline Natural Flux
+2580 1.0248021e+11
+Btw_chains_var_Atmospheric Lifetime of N2O
+2580 21.235013
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+2580 1.8268818e-06
+Btw_chains_var_Payoff
+2580 -1034442.6
+Wth_chains_mean_var_Baseline Natural Flux
+2580 1.3999541e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+2580 22.716595
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+2580 1.6034573e-05
+Wth_chains_mean_var_Payoff
+2580 -5.7764759e+09
+PSRF_Baseline Natural Flux
+2580 1.7312443
+PSRF_Atmospheric Lifetime of N2O
+2580 1.9339985
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+2580 1.1131527
+PSRF_Payoff
+2580 -0.99939783
+Accept_rt[Chain_0]
+2580 0.0703125
+Accepted[Chain_0]
+2580 18
+Rejected[Chain_0]
+2580 238
+Accept_rt[Chain_1]
+2580 0.09375
+Accepted[Chain_1]
+2580 24
+Rejected[Chain_1]
+2580 232
+Accept_rt[Chain_2]
+2580 0.26953125
+Accepted[Chain_2]
+2580 69
+Rejected[Chain_2]
+2580 187
+Accept_rt[Chain_3]
+2580 0.18359375
+Accepted[Chain_3]
+2580 47
+Rejected[Chain_3]
+2580 209
+Accept_rt[Chain_4]
+2580 0.078125
+Accepted[Chain_4]
+2580 20
+Rejected[Chain_4]
+2580 236
+Accept_rt[Chain_5]
+2580 0.0546875
+Accepted[Chain_5]
+2580 14
+Rejected[Chain_5]
+2580 242
+Accept_rt[Chain_6]
+2580 0.08984375
+Accepted[Chain_6]
+2580 23
+Rejected[Chain_6]
+2580 233
+Accept_rt[Chain_7]
+2580 0.15234375
+Accepted[Chain_7]
+2580 39
+Rejected[Chain_7]
+2580 217
+Accept_rt[Chain_8]
+2580 0.078125
+Accepted[Chain_8]
+2580 20
+Rejected[Chain_8]
+2580 236
+Accept_rt[Chain_9]
+2580 0.09375
+Accepted[Chain_9]
+2580 24
+Rejected[Chain_9]
+2580 232
+Best Payoff
+2740 55304.002
+Improvement
+2740 0.0024021742
+Is_outlier[Chain_2]
+2910 55706.401
+Is_outlier[Chain_3]
+2910 55668.787
+Mean_accept_rt
+2910 0.116609
+Btw_chains_mean_Baseline Natural Flux
+2910 9409904.6
+Btw_chains_mean_Atmospheric Lifetime of N2O
+2910 197.41469
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+2910 0.059242012
+Btw_chains_mean_Payoff
+2910 -56936.696
+Btw_chains_var_Baseline Natural Flux
+2910 6.7644424e+10
+Btw_chains_var_Atmospheric Lifetime of N2O
+2910 14.170545
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+2910 1.3683947e-06
+Btw_chains_var_Payoff
+2910 -673447.96
+Wth_chains_mean_var_Baseline Natural Flux
+2910 1.4436005e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+2910 24.778926
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+2910 1.2758616e-05
+Wth_chains_mean_var_Payoff
+2910 -4.5315927e+09
+PSRF_Baseline Natural Flux
+2910 1.4678893
+PSRF_Atmospheric Lifetime of N2O
+2910 1.5711869
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+2910 1.1065606
+PSRF_Payoff
+2910 -0.99945657
+Accept_rt[Chain_0]
+2910 0.076124567
+Accepted[Chain_0]
+2910 22
+Rejected[Chain_0]
+2910 267
+Accept_rt[Chain_1]
+2910 0.093425606
+Accepted[Chain_1]
+2910 27
+Rejected[Chain_1]
+2910 262
+Accept_rt[Chain_2]
+2910 0.25951557
+Accepted[Chain_2]
+2910 75
+Rejected[Chain_2]
+2910 214
+Accept_rt[Chain_3]
+2910 0.19031142
+Accepted[Chain_3]
+2910 55
+Rejected[Chain_3]
+2910 234
+Accept_rt[Chain_4]
+2910 0.076124567
+Accepted[Chain_4]
+2910 22
+Rejected[Chain_4]
+2910 267
+Accept_rt[Chain_5]
+2910 0.058823529
+Accepted[Chain_5]
+2910 17
+Rejected[Chain_5]
+2910 272
+Accept_rt[Chain_6]
+2910 0.08650519
+Accepted[Chain_6]
+2910 25
+Rejected[Chain_6]
+2910 264
+Accept_rt[Chain_7]
+2910 0.15224913
+Accepted[Chain_7]
+2910 44
+Rejected[Chain_7]
+2910 245
+Accept_rt[Chain_8]
+2910 0.07266436
+Accepted[Chain_8]
+2910 21
+Rejected[Chain_8]
+2910 268
+Accept_rt[Chain_9]
+2910 0.10034602
+Accepted[Chain_9]
+2910 29
+Rejected[Chain_9]
+2910 260
+Is_outlier[Chain_2]
+3260 55459.45
+Is_outlier[Chain_3]
+3260 55636.405
+Mean_accept_rt
+3260 0.11604938
+Btw_chains_mean_Baseline Natural Flux
+3260 9377390.9
+Btw_chains_mean_Atmospheric Lifetime of N2O
+3260 197.88841
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+3260 0.059355815
+Btw_chains_mean_Payoff
+3260 -56616.384
+Btw_chains_var_Baseline Natural Flux
+3260 4.4932088e+10
+Btw_chains_var_Atmospheric Lifetime of N2O
+3260 9.5149327
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+3260 1.0310066e-06
+Btw_chains_var_Payoff
+3260 -447795.81
+Wth_chains_mean_var_Baseline Natural Flux
+3260 1.3812988e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+3260 24.48128
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+3260 1.0283374e-05
+Wth_chains_mean_var_Payoff
+3260 -3.6047066e+09
+PSRF_Baseline Natural Flux
+3260 1.3246714
+PSRF_Atmospheric Lifetime of N2O
+3260 1.3880443
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+3260 1.0996423
+PSRF_Payoff
+3260 -0.99950694
+Accept_rt[Chain_0]
+3260 0.086419753
+Accepted[Chain_0]
+3260 28
+Rejected[Chain_0]
+3260 296
+Accept_rt[Chain_1]
+3260 0.086419753
+Accepted[Chain_1]
+3260 28
+Rejected[Chain_1]
+3260 296
+Accept_rt[Chain_2]
+3260 0.27160494
+Accepted[Chain_2]
+3260 88
+Rejected[Chain_2]
+3260 236
+Accept_rt[Chain_3]
+3260 0.18209877
+Accepted[Chain_3]
+3260 59
+Rejected[Chain_3]
+3260 265
+Accept_rt[Chain_4]
+3260 0.074074074
+Accepted[Chain_4]
+3260 24
+Rejected[Chain_4]
+3260 300
+Accept_rt[Chain_5]
+3260 0.064814815
+Accepted[Chain_5]
+3260 21
+Rejected[Chain_5]
+3260 303
+Accept_rt[Chain_6]
+3260 0.083333333
+Accepted[Chain_6]
+3260 27
+Rejected[Chain_6]
+3260 297
+Accept_rt[Chain_7]
+3260 0.15123457
+Accepted[Chain_7]
+3260 49
+Rejected[Chain_7]
+3260 275
+Accept_rt[Chain_8]
+3260 0.067901235
+Accepted[Chain_8]
+3260 22
+Rejected[Chain_8]
+3260 302
+Accept_rt[Chain_9]
+3260 0.092592593
+Accepted[Chain_9]
+3260 30
+Rejected[Chain_9]
+3260 294
+Best Payoff
+3460 55304
+Improvement
+3460 0.0018003624
+Is_outlier[Chain_2]
+3630 55413.676
+Is_outlier[Chain_3]
+3630 55544.042
+Mean_accept_rt
+3630 0.11745152
+Btw_chains_mean_Baseline Natural Flux
+3630 9350877.7
+Btw_chains_mean_Atmospheric Lifetime of N2O
+3630 198.27679
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+3630 0.059446916
+Btw_chains_mean_Payoff
+3630 -56369.522
+Btw_chains_var_Baseline Natural Flux
+3630 2.9950611e+10
+Btw_chains_var_Atmospheric Lifetime of N2O
+3630 6.3761628
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+3630 7.8851308e-07
+Btw_chains_var_Payoff
+3630 -302515.3
+Wth_chains_mean_var_Baseline Natural Flux
+3630 1.2756599e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+3630 23.15228
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+3630 8.3793358e-06
+Wth_chains_mean_var_Payoff
+3630 -2.9031422e+09
+PSRF_Baseline Natural Flux
+3630 1.2342312
+PSRF_Atmospheric Lifetime of N2O
+3630 1.2748471
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+3630 1.0935481
+PSRF_Payoff
+3630 -0.99955019
+CMCP
+3630 1
+Overlap
+3630 0.027610498
+Collapsed
+3630 0
+Accept_rt[Chain_0]
+3630 0.088642659
+Accepted[Chain_0]
+3630 32
+Rejected[Chain_0]
+3630 329
+Accept_rt[Chain_1]
+3630 0.085872576
+Accepted[Chain_1]
+3630 31
+Rejected[Chain_1]
+3630 330
+Accept_rt[Chain_2]
+3630 0.26315789
+Accepted[Chain_2]
+3630 95
+Rejected[Chain_2]
+3630 266
+Accept_rt[Chain_3]
+3630 0.20498615
+Accepted[Chain_3]
+3630 74
+Rejected[Chain_3]
+3630 287
+Accept_rt[Chain_4]
+3630 0.074792244
+Accepted[Chain_4]
+3630 27
+Rejected[Chain_4]
+3630 334
+Accept_rt[Chain_5]
+3630 0.063711911
+Accepted[Chain_5]
+3630 23
+Rejected[Chain_5]
+3630 338
+Accept_rt[Chain_6]
+3630 0.083102493
+Accepted[Chain_6]
+3630 30
+Rejected[Chain_6]
+3630 331
+Accept_rt[Chain_7]
+3630 0.15512465
+Accepted[Chain_7]
+3630 56
+Rejected[Chain_7]
+3630 305
+Accept_rt[Chain_8]
+3630 0.060941828
+Accepted[Chain_8]
+3630 22
+Rejected[Chain_8]
+3630 339
+Accept_rt[Chain_9]
+3630 0.094182825
+Accepted[Chain_9]
+3630 34
+Rejected[Chain_9]
+3630 327
+Best Payoff
+3920 55303.998
+Improvement
+3920 0.0022105111
+Is_outlier[Chain_2]
+4020 55408.584
+Is_outlier[Chain_3]
+4020 55446.056
+Mean_accept_rt
+4020 0.1185
+Btw_chains_mean_Baseline Natural Flux
+4020 9330281.7
+Btw_chains_mean_Atmospheric Lifetime of N2O
+4020 198.57888
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+4020 0.059529766
+Btw_chains_mean_Payoff
+4020 -56177.143
+Btw_chains_var_Baseline Natural Flux
+4020 2.0436128e+10
+Btw_chains_var_Atmospheric Lifetime of N2O
+4020 4.3728404
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+4020 5.8428497e-07
+Btw_chains_var_Payoff
+4020 -206665.2
+Wth_chains_mean_var_Baseline Natural Flux
+4020 1.1423983e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+4020 21.054039
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+4020 6.9243055e-06
+Wth_chains_mean_var_Payoff
+4020 -2.3642493e+09
+PSRF_Baseline Natural Flux
+4020 1.1783879
+PSRF_Atmospheric Lifetime of N2O
+4020 1.207196
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+4020 1.0838817
+PSRF_Payoff
+4020 -0.99958741
+Accept_rt[Chain_0]
+4020 0.09
+Accepted[Chain_0]
+4020 36
+Rejected[Chain_0]
+4020 364
+Accept_rt[Chain_1]
+4020 0.085
+Accepted[Chain_1]
+4020 34
+Rejected[Chain_1]
+4020 366
+Accept_rt[Chain_2]
+4020 0.25
+Accepted[Chain_2]
+4020 100
+Rejected[Chain_2]
+4020 300
+Accept_rt[Chain_3]
+4020 0.2175
+Accepted[Chain_3]
+4020 87
+Rejected[Chain_3]
+4020 313
+Accept_rt[Chain_4]
+4020 0.0825
+Accepted[Chain_4]
+4020 33
+Rejected[Chain_4]
+4020 367
+Accept_rt[Chain_5]
+4020 0.0675
+Accepted[Chain_5]
+4020 27
+Rejected[Chain_5]
+4020 373
+Accept_rt[Chain_6]
+4020 0.09
+Accepted[Chain_6]
+4020 36
+Rejected[Chain_6]
+4020 364
+Accept_rt[Chain_7]
+4020 0.1525
+Accepted[Chain_7]
+4020 61
+Rejected[Chain_7]
+4020 339
+Accept_rt[Chain_8]
+4020 0.0575
+Accepted[Chain_8]
+4020 23
+Rejected[Chain_8]
+4020 377
+Accept_rt[Chain_9]
+4020 0.0925
+Accepted[Chain_9]
+4020 37
+Rejected[Chain_9]
+4020 363
+Is_outlier[Chain_2]
+4430 55369.308
+Is_outlier[Chain_3]
+4430 55410.272
+Mean_accept_rt
+4430 0.11882086
+Btw_chains_mean_Baseline Natural Flux
+4430 9314068.1
+Btw_chains_mean_Atmospheric Lifetime of N2O
+4430 198.81666
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+4430 0.05960191
+Btw_chains_mean_Payoff
+4430 -56026.035
+Btw_chains_var_Baseline Natural Flux
+4430 1.4186686e+10
+Btw_chains_var_Atmospheric Lifetime of N2O
+4430 3.0527883
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+4430 4.2530517e-07
+Btw_chains_var_Payoff
+4430 -143175.46
+Wth_chains_mean_var_Baseline Natural Flux
+4430 1.0081445e+11
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+4430 18.77273
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+4430 5.7851804e-06
+Wth_chains_mean_var_Payoff
+4430 -1.9447924e+09
+PSRF_Baseline Natural Flux
+4430 1.1402673
+PSRF_Atmospheric Lifetime of N2O
+4430 1.1621647
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+4430 1.0730628
+PSRF_Payoff
+4430 -0.99962011
+Accept_rt[Chain_0]
+4430 0.090702948
+Accepted[Chain_0]
+4430 40
+Rejected[Chain_0]
+4430 401
+Accept_rt[Chain_1]
+4430 0.083900227
+Accepted[Chain_1]
+4430 37
+Rejected[Chain_1]
+4430 404
+Accept_rt[Chain_2]
+4430 0.25623583
+Accepted[Chain_2]
+4430 113
+Rejected[Chain_2]
+4430 328
+Accept_rt[Chain_3]
+4430 0.2154195
+Accepted[Chain_3]
+4430 95
+Rejected[Chain_3]
+4430 346
+Accept_rt[Chain_4]
+4430 0.079365079
+Accepted[Chain_4]
+4430 35
+Rejected[Chain_4]
+4430 406
+Accept_rt[Chain_5]
+4430 0.065759637
+Accepted[Chain_5]
+4430 29
+Rejected[Chain_5]
+4430 412
+Accept_rt[Chain_6]
+4430 0.092970522
+Accepted[Chain_6]
+4430 41
+Rejected[Chain_6]
+4430 400
+Accept_rt[Chain_7]
+4430 0.14739229
+Accepted[Chain_7]
+4430 65
+Rejected[Chain_7]
+4430 376
+Accept_rt[Chain_8]
+4430 0.058956916
+Accepted[Chain_8]
+4430 26
+Rejected[Chain_8]
+4430 415
+Accept_rt[Chain_9]
+4430 0.097505669
+Accepted[Chain_9]
+4430 43
+Rejected[Chain_9]
+4430 398
+Is_outlier[Chain_2]
+4860 55359.072
+Is_outlier[Chain_3]
+4860 55346.908
+Mean_accept_rt
+4860 0.12169421
+Btw_chains_mean_Baseline Natural Flux
+4860 9300709.1
+Btw_chains_mean_Atmospheric Lifetime of N2O
+4860 199.00891
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+4860 0.059662372
+Btw_chains_mean_Payoff
+4860 -55905.791
+Btw_chains_var_Baseline Natural Flux
+4860 9.9824006e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+4860 2.155041
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+4860 3.0949665e-07
+Btw_chains_var_Payoff
+4860 -100398.17
+Wth_chains_mean_var_Baseline Natural Flux
+4860 8.8398476e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+4860 16.588999
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+4860 4.8723412e-06
+Wth_chains_mean_var_Payoff
+4860 -1.61437e+09
+PSRF_Baseline Natural Flux
+4860 1.1125118
+PSRF_Atmospheric Lifetime of N2O
+4860 1.1294946
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+4860 1.0631079
+PSRF_Payoff
+4860 -0.99964897
+Accept_rt[Chain_0]
+4860 0.095041322
+Accepted[Chain_0]
+4860 46
+Rejected[Chain_0]
+4860 438
+Accept_rt[Chain_1]
+4860 0.08677686
+Accepted[Chain_1]
+4860 42
+Rejected[Chain_1]
+4860 442
+Accept_rt[Chain_2]
+4860 0.25413223
+Accepted[Chain_2]
+4860 123
+Rejected[Chain_2]
+4860 361
+Accept_rt[Chain_3]
+4860 0.21280992
+Accepted[Chain_3]
+4860 103
+Rejected[Chain_3]
+4860 381
+Accept_rt[Chain_4]
+4860 0.084710744
+Accepted[Chain_4]
+4860 41
+Rejected[Chain_4]
+4860 443
+Accept_rt[Chain_5]
+4860 0.066115702
+Accepted[Chain_5]
+4860 32
+Rejected[Chain_5]
+4860 452
+Accept_rt[Chain_6]
+4860 0.097107438
+Accepted[Chain_6]
+4860 47
+Rejected[Chain_6]
+4860 437
+Accept_rt[Chain_7]
+4860 0.14876033
+Accepted[Chain_7]
+4860 72
+Rejected[Chain_7]
+4860 412
+Accept_rt[Chain_8]
+4860 0.070247934
+Accepted[Chain_8]
+4860 34
+Rejected[Chain_8]
+4860 450
+Accept_rt[Chain_9]
+4860 0.10123967
+Accepted[Chain_9]
+4860 49
+Rejected[Chain_9]
+4860 435
+Is_outlier[Chain_2]
+5310 55337.329
+Mean_accept_rt
+5310 0.12400756
+Btw_chains_mean_Baseline Natural Flux
+5310 9290136.4
+Btw_chains_mean_Atmospheric Lifetime of N2O
+5310 199.16377
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+5310 0.05971648
+Btw_chains_mean_Payoff
+5310 -55808.735
+Btw_chains_var_Baseline Natural Flux
+5310 7.1241463e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+5310 1.5419852
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+5310 2.1855047e-07
+Btw_chains_var_Payoff
+5310 -70748.277
+Wth_chains_mean_var_Baseline Natural Flux
+5310 7.7186991e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+5310 14.576945
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+5310 4.1438958e-06
+Wth_chains_mean_var_Payoff
+5310 -1.3512372e+09
+PSRF_Baseline Natural Flux
+5310 1.0919192
+PSRF_Atmospheric Lifetime of N2O
+5310 1.1054044
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+5310 1.0523623
+PSRF_Payoff
+5310 -0.99967429
+CMCP
+5310 1
+Overlap
+5310 0
+Collapsed
+5310 0
+Accept_rt[Chain_0]
+5310 0.10018904
+Accepted[Chain_0]
+5310 53
+Rejected[Chain_0]
+5310 476
+Accept_rt[Chain_1]
+5310 0.081285444
+Accepted[Chain_1]
+5310 43
+Rejected[Chain_1]
+5310 486
+Accept_rt[Chain_2]
+5310 0.25519849
+Accepted[Chain_2]
+5310 135
+Rejected[Chain_2]
+5310 394
+Accept_rt[Chain_3]
+5310 0.21928166
+Accepted[Chain_3]
+5310 116
+Rejected[Chain_3]
+5310 413
+Accept_rt[Chain_4]
+5310 0.092627599
+Accepted[Chain_4]
+5310 49
+Rejected[Chain_4]
+5310 480
+Accept_rt[Chain_5]
+5310 0.06805293
+Accepted[Chain_5]
+5310 36
+Rejected[Chain_5]
+5310 493
+Accept_rt[Chain_6]
+5310 0.1020794
+Accepted[Chain_6]
+5310 54
+Rejected[Chain_6]
+5310 475
+Accept_rt[Chain_7]
+5310 0.14744802
+Accepted[Chain_7]
+5310 78
+Rejected[Chain_7]
+5310 451
+Accept_rt[Chain_8]
+5310 0.06805293
+Accepted[Chain_8]
+5310 36
+Rejected[Chain_8]
+5310 493
+Accept_rt[Chain_9]
+5310 0.10586011
+Accepted[Chain_9]
+5310 56
+Rejected[Chain_9]
+5310 473
+Is_outlier[Chain_2]
+5780 55321.16
+Mean_accept_rt
+5780 0.12899306
+Btw_chains_mean_Baseline Natural Flux
+5780 9281402.5
+Btw_chains_mean_Atmospheric Lifetime of N2O
+5780 199.29164
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+5780 0.059760863
+Btw_chains_mean_Payoff
+5780 -55730.093
+Btw_chains_var_Baseline Natural Flux
+5780 5.1194495e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+5780 1.1088329
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+5780 1.5545906e-07
+Btw_chains_var_Payoff
+5780 -50409.467
+Wth_chains_mean_var_Baseline Natural Flux
+5780 6.7394492e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+5780 12.795731
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+5780 3.5419578e-06
+Wth_chains_mean_var_Payoff
+5780 -1.1395986e+09
+PSRF_Baseline Natural Flux
+5780 1.0756152
+PSRF_Atmospheric Lifetime of N2O
+5780 1.0863092
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+5780 1.0435435
+PSRF_Payoff
+5780 -0.99969701
+Accept_rt[Chain_0]
+5780 0.10416667
+Accepted[Chain_0]
+5780 60
+Rejected[Chain_0]
+5780 516
+Accept_rt[Chain_1]
+5780 0.090277778
+Accepted[Chain_1]
+5780 52
+Rejected[Chain_1]
+5780 524
+Accept_rt[Chain_2]
+5780 0.265625
+Accepted[Chain_2]
+5780 153
+Rejected[Chain_2]
+5780 423
+Accept_rt[Chain_3]
+5780 0.21527778
+Accepted[Chain_3]
+5780 124
+Rejected[Chain_3]
+5780 452
+Accept_rt[Chain_4]
+5780 0.10243056
+Accepted[Chain_4]
+5780 59
+Rejected[Chain_4]
+5780 517
+Accept_rt[Chain_5]
+5780 0.069444444
+Accepted[Chain_5]
+5780 40
+Rejected[Chain_5]
+5780 536
+Accept_rt[Chain_6]
+5780 0.11458333
+Accepted[Chain_6]
+5780 66
+Rejected[Chain_6]
+5780 510
+Accept_rt[Chain_7]
+5780 0.14756944
+Accepted[Chain_7]
+5780 85
+Rejected[Chain_7]
+5780 491
+Accept_rt[Chain_8]
+5780 0.071180556
+Accepted[Chain_8]
+5780 41
+Rejected[Chain_8]
+5780 535
+Accept_rt[Chain_9]
+5780 0.109375
+Accepted[Chain_9]
+5780 63
+Rejected[Chain_9]
+5780 513
+Is_outlier[Chain_5]
+6280 55307.635
+Mean_accept_rt
+6280 0.13242812
+Btw_chains_mean_Baseline Natural Flux
+6280 9273987
+Btw_chains_mean_Atmospheric Lifetime of N2O
+6280 199.39952
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+6280 0.059797472
+Btw_chains_mean_Payoff
+6280 -55664.89
+Btw_chains_var_Baseline Natural Flux
+6280 3.6866975e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+6280 0.79613126
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+6280 1.1140902e-07
+Btw_chains_var_Payoff
+6280 -36137.253
+Wth_chains_mean_var_Baseline Natural Flux
+6280 5.8738577e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+6280 11.204314
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+6280 3.031365e-06
+Wth_chains_mean_var_Payoff
+6280 -9.6472926e+08
+PSRF_Baseline Natural Flux
+6280 1.062445
+PSRF_Atmospheric Lifetime of N2O
+6280 1.0707363
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+6280 1.0364326
+PSRF_Payoff
+6280 -0.99971797
+Accept_rt[Chain_0]
+6280 0.11182109
+Accepted[Chain_0]
+6280 70
+Rejected[Chain_0]
+6280 556
+Accept_rt[Chain_1]
+6280 0.10063898
+Accepted[Chain_1]
+6280 63
+Rejected[Chain_1]
+6280 563
+Accept_rt[Chain_2]
+6280 0.26837061
+Accepted[Chain_2]
+6280 168
+Rejected[Chain_2]
+6280 458
+Accept_rt[Chain_3]
+6280 0.20926518
+Accepted[Chain_3]
+6280 131
+Rejected[Chain_3]
+6280 495
+Accept_rt[Chain_4]
+6280 0.10543131
+Accepted[Chain_4]
+6280 66
+Rejected[Chain_4]
+6280 560
+Accept_rt[Chain_5]
+6280 0.07827476
+Accepted[Chain_5]
+6280 49
+Rejected[Chain_5]
+6280 577
+Accept_rt[Chain_6]
+6280 0.11341853
+Accepted[Chain_6]
+6280 71
+Rejected[Chain_6]
+6280 555
+Accept_rt[Chain_7]
+6280 0.14536741
+Accepted[Chain_7]
+6280 91
+Rejected[Chain_7]
+6280 535
+Accept_rt[Chain_8]
+6280 0.076677316
+Accepted[Chain_8]
+6280 48
+Rejected[Chain_8]
+6280 578
+Accept_rt[Chain_9]
+6280 0.11501597
+Accepted[Chain_9]
+6280 72
+Rejected[Chain_9]
+6280 554
+Is_outlier[Chain_4]
+6800 55308.912
+Is_outlier[Chain_6]
+6800 55305.486
+Mean_accept_rt
+6800 0.13657817
+Btw_chains_mean_Baseline Natural Flux
+6800 9267989.1
+Btw_chains_mean_Atmospheric Lifetime of N2O
+6800 199.48762
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+6800 0.059827284
+Btw_chains_mean_Payoff
+6800 -55611.771
+Btw_chains_var_Baseline Natural Flux
+6800 2.6792193e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+6800 0.57827609
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+6800 8.0950063e-08
+Btw_chains_var_Payoff
+6800 -26244.589
+Wth_chains_mean_var_Baseline Natural Flux
+6800 5.1255526e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+6800 9.8115078
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+6800 2.6068077e-06
+Wth_chains_mean_var_Payoff
+6800 -8.2234828e+08
+PSRF_Baseline Natural Flux
+6800 1.0519768
+PSRF_Atmospheric Lifetime of N2O
+6800 1.0586436
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+6800 1.0307583
+PSRF_Payoff
+6800 -0.99973693
+CMCP
+6800 0.00013433274
+Overlap
+6800 0
+Collapsed
+6800 0
+Accept_rt[Chain_0]
+6800 0.11946903
+Accepted[Chain_0]
+6800 81
+Rejected[Chain_0]
+6800 597
+Accept_rt[Chain_1]
+6800 0.10176991
+Accepted[Chain_1]
+6800 69
+Rejected[Chain_1]
+6800 609
+Accept_rt[Chain_2]
+6800 0.26253687
+Accepted[Chain_2]
+6800 178
+Rejected[Chain_2]
+6800 500
+Accept_rt[Chain_3]
+6800 0.20501475
+Accepted[Chain_3]
+6800 139
+Rejected[Chain_3]
+6800 539
+Accept_rt[Chain_4]
+6800 0.11946903
+Accepted[Chain_4]
+6800 81
+Rejected[Chain_4]
+6800 597
+Accept_rt[Chain_5]
+6800 0.088495575
+Accepted[Chain_5]
+6800 60
+Rejected[Chain_5]
+6800 618
+Accept_rt[Chain_6]
+6800 0.11061947
+Accepted[Chain_6]
+6800 75
+Rejected[Chain_6]
+6800 603
+Accept_rt[Chain_7]
+6800 0.14749263
+Accepted[Chain_7]
+6800 100
+Rejected[Chain_7]
+6800 578
+Accept_rt[Chain_8]
+6800 0.089970501
+Accepted[Chain_8]
+6800 61
+Rejected[Chain_8]
+6800 617
+Accept_rt[Chain_9]
+6800 0.12094395
+Accepted[Chain_9]
+6800 82
+Rejected[Chain_9]
+6800 596
+Best Payoff
+6900 55303.998
+Improvement
+6900 4.5535489e-06
+Is_outlier[Chain_2]
+7350 55307.407
+Is_outlier[Chain_3]
+7350 55307.02
+Mean_accept_rt
+7350 0.14106412
+Btw_chains_mean_Baseline Natural Flux
+7350 9262966.2
+Btw_chains_mean_Atmospheric Lifetime of N2O
+7350 199.56142
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+7350 0.059852208
+Btw_chains_mean_Payoff
+7350 -55567.393
+Btw_chains_var_Baseline Natural Flux
+7350 1.9604412e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+7350 0.42332258
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+7350 5.9232677e-08
+Btw_chains_var_Payoff
+7350 -19204.882
+Wth_chains_mean_var_Baseline Natural Flux
+7350 4.4706509e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+7350 8.5797099
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+7350 2.246437e-06
+Wth_chains_mean_var_Payoff
+7350 -7.0351131e+08
+PSRF_Baseline Natural Flux
+7350 1.0435785
+PSRF_Atmospheric Lifetime of N2O
+7350 1.0490671
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+7350 1.0260945
+PSRF_Payoff
+7350 -0.99975445
+Accept_rt[Chain_0]
+7350 0.1255116
+Accepted[Chain_0]
+7350 92
+Rejected[Chain_0]
+7350 641
+Accept_rt[Chain_1]
+7350 0.1159618
+Accepted[Chain_1]
+7350 85
+Rejected[Chain_1]
+7350 648
+Accept_rt[Chain_2]
+7350 0.25648022
+Accepted[Chain_2]
+7350 188
+Rejected[Chain_2]
+7350 545
+Accept_rt[Chain_3]
+7350 0.2005457
+Accepted[Chain_3]
+7350 147
+Rejected[Chain_3]
+7350 586
+Accept_rt[Chain_4]
+7350 0.12414734
+Accepted[Chain_4]
+7350 91
+Rejected[Chain_4]
+7350 642
+Accept_rt[Chain_5]
+7350 0.10095498
+Accepted[Chain_5]
+7350 74
+Rejected[Chain_5]
+7350 659
+Accept_rt[Chain_6]
+7350 0.11459754
+Accepted[Chain_6]
+7350 84
+Rejected[Chain_6]
+7350 649
+Accept_rt[Chain_7]
+7350 0.14597544
+Accepted[Chain_7]
+7350 107
+Rejected[Chain_7]
+7350 626
+Accept_rt[Chain_8]
+7350 0.10095498
+Accepted[Chain_8]
+7350 74
+Rejected[Chain_8]
+7350 659
+Accept_rt[Chain_9]
+7350 0.1255116
+Accepted[Chain_9]
+7350 92
+Rejected[Chain_9]
+7350 641
+Is_outlier[Chain_1]
+7930 55308.441
+Mean_accept_rt
+7930 0.14791403
+Btw_chains_mean_Baseline Natural Flux
+7930 9258754.9
+Btw_chains_mean_Atmospheric Lifetime of N2O
+7930 199.62301
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+7930 0.059872997
+Btw_chains_mean_Payoff
+7930 -55530.293
+Btw_chains_var_Baseline Natural Flux
+7930 1.4429735e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+7930 0.31197266
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+7930 4.3697114e-08
+Btw_chains_var_Payoff
+7930 -14167.812
+Wth_chains_mean_var_Baseline Natural Flux
+7930 3.8998641e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+7930 7.5009233
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+7930 1.940607e-06
+Wth_chains_mean_var_Payoff
+7930 -6.0407739e+08
+PSRF_Baseline Natural Flux
+7930 1.0367478
+PSRF_Atmospheric Lifetime of N2O
+7930 1.0413384
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+7930 1.0222644
+PSRF_Payoff
+7930 -0.99977061
+CMCP
+7930 0.15729921
+Overlap
+7930 0
+Collapsed
+7930 0
+Accept_rt[Chain_0]
+7930 0.13274336
+Accepted[Chain_0]
+7930 105
+Rejected[Chain_0]
+7930 686
+Accept_rt[Chain_1]
+7930 0.12389381
+Accepted[Chain_1]
+7930 98
+Rejected[Chain_1]
+7930 693
+Accept_rt[Chain_2]
+7930 0.26169406
+Accepted[Chain_2]
+7930 207
+Rejected[Chain_2]
+7930 584
+Accept_rt[Chain_3]
+7930 0.20480405
+Accepted[Chain_3]
+7930 162
+Rejected[Chain_3]
+7930 629
+Accept_rt[Chain_4]
+7930 0.13274336
+Accepted[Chain_4]
+7930 105
+Rejected[Chain_4]
+7930 686
+Accept_rt[Chain_5]
+7930 0.10872314
+Accepted[Chain_5]
+7930 86
+Rejected[Chain_5]
+7930 705
+Accept_rt[Chain_6]
+7930 0.12515803
+Accepted[Chain_6]
+7930 99
+Rejected[Chain_6]
+7930 692
+Accept_rt[Chain_7]
+7930 0.14664981
+Accepted[Chain_7]
+7930 116
+Rejected[Chain_7]
+7930 675
+Accept_rt[Chain_8]
+7930 0.10998736
+Accepted[Chain_8]
+7930 87
+Rejected[Chain_8]
+7930 704
+Accept_rt[Chain_9]
+7930 0.13274336
+Accepted[Chain_9]
+7930 105
+Rejected[Chain_9]
+7930 686
+Is_outlier[Chain_1]
+8540 55305.351
+Is_outlier[Chain_6]
+8540 55311.973
+Mean_accept_rt
+8540 0.15234742
+Btw_chains_mean_Baseline Natural Flux
+8540 9255245.9
+Btw_chains_mean_Atmospheric Lifetime of N2O
+8540 199.67481
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+8540 0.059890435
+Btw_chains_mean_Payoff
+8540 -55499.151
+Btw_chains_var_Baseline Natural Flux
+8540 1.0696701e+09
+Btw_chains_var_Atmospheric Lifetime of N2O
+8540 0.23165671
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+8540 3.244756e-08
+Btw_chains_var_Payoff
+8540 -10519.991
+Wth_chains_mean_var_Baseline Natural Flux
+8540 3.4054164e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+8540 6.5617431
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+8540 1.6810363e-06
+Wth_chains_mean_var_Payoff
+8540 -5.2063747e+08
+PSRF_Baseline Natural Flux
+8540 1.0311761
+PSRF_Atmospheric Lifetime of N2O
+8540 1.0350694
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+8540 1.0190674
+PSRF_Payoff
+8540 -0.99978546
+Accept_rt[Chain_0]
+8540 0.13732394
+Accepted[Chain_0]
+8540 117
+Rejected[Chain_0]
+8540 735
+Accept_rt[Chain_1]
+8540 0.13380282
+Accepted[Chain_1]
+8540 114
+Rejected[Chain_1]
+8540 738
+Accept_rt[Chain_2]
+8540 0.25821596
+Accepted[Chain_2]
+8540 220
+Rejected[Chain_2]
+8540 632
+Accept_rt[Chain_3]
+8540 0.20187793
+Accepted[Chain_3]
+8540 172
+Rejected[Chain_3]
+8540 680
+Accept_rt[Chain_4]
+8540 0.13380282
+Accepted[Chain_4]
+8540 114
+Rejected[Chain_4]
+8540 738
+Accept_rt[Chain_5]
+8540 0.11971831
+Accepted[Chain_5]
+8540 102
+Rejected[Chain_5]
+8540 750
+Accept_rt[Chain_6]
+8540 0.12676056
+Accepted[Chain_6]
+8540 108
+Rejected[Chain_6]
+8540 744
+Accept_rt[Chain_7]
+8540 0.15610329
+Accepted[Chain_7]
+8540 133
+Rejected[Chain_7]
+8540 719
+Accept_rt[Chain_8]
+8540 0.11502347
+Accepted[Chain_8]
+8540 98
+Rejected[Chain_8]
+8540 754
+Accept_rt[Chain_9]
+8540 0.14084507
+Accepted[Chain_9]
+8540 120
+Rejected[Chain_9]
+8540 732
+Is_outlier[Chain_5]
+9180 55306.527
+Mean_accept_rt
+9180 0.15447598
+Btw_chains_mean_Baseline Natural Flux
+9180 9252310.2
+Btw_chains_mean_Atmospheric Lifetime of N2O
+9180 199.71842
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+9180 0.059905126
+Btw_chains_mean_Payoff
+9180 -55472.938
+Btw_chains_var_Baseline Natural Flux
+9180 8.0147857e+08
+Btw_chains_var_Atmospheric Lifetime of N2O
+9180 0.17349514
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+9180 2.4284128e-08
+Btw_chains_var_Payoff
+9180 -7880.2518
+Wth_chains_mean_var_Baseline Natural Flux
+9180 2.9778473e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+9180 5.7467001
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+9180 1.4604215e-06
+Wth_chains_mean_var_Payoff
+9180 -4.5039658e+08
+PSRF_Baseline Natural Flux
+9180 1.0266964
+PSRF_Atmospheric Lifetime of N2O
+9180 1.0299721
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+9180 1.0164098
+PSRF_Payoff
+9180 -0.99979916
+CMCP
+9180 0.11979493
+Overlap
+9180 0
+Collapsed
+9180 0
+Accept_rt[Chain_0]
+9180 0.13318777
+Accepted[Chain_0]
+9180 122
+Rejected[Chain_0]
+9180 794
+Accept_rt[Chain_1]
+9180 0.14628821
+Accepted[Chain_1]
+9180 134
+Rejected[Chain_1]
+9180 782
+Accept_rt[Chain_2]
+9180 0.25218341
+Accepted[Chain_2]
+9180 231
+Rejected[Chain_2]
+9180 685
+Accept_rt[Chain_3]
+9180 0.20305677
+Accepted[Chain_3]
+9180 186
+Rejected[Chain_3]
+9180 730
+Accept_rt[Chain_4]
+9180 0.13318777
+Accepted[Chain_4]
+9180 122
+Rejected[Chain_4]
+9180 794
+Accept_rt[Chain_5]
+9180 0.12445415
+Accepted[Chain_5]
+9180 114
+Rejected[Chain_5]
+9180 802
+Accept_rt[Chain_6]
+9180 0.13209607
+Accepted[Chain_6]
+9180 121
+Rejected[Chain_6]
+9180 795
+Accept_rt[Chain_7]
+9180 0.16157205
+Accepted[Chain_7]
+9180 148
+Rejected[Chain_7]
+9180 768
+Accept_rt[Chain_8]
+9180 0.11899563
+Accepted[Chain_8]
+9180 109
+Rejected[Chain_8]
+9180 807
+Accept_rt[Chain_9]
+9180 0.13973799
+Accepted[Chain_9]
+9180 128
+Rejected[Chain_9]
+9180 788
+Is_outlier[Chain_5]
+9336 55306.196
+Mean_accept_rt
+9336 0.15594458
+Btw_chains_mean_Baseline Natural Flux
+9336 9251689.9
+Btw_chains_mean_Atmospheric Lifetime of N2O
+9336 199.72737
+Btw_chains_mean_Effective Sensitivity of Temperature on N2O Flux
+9336 0.059908162
+Btw_chains_mean_Payoff
+9336 -55467.539
+Btw_chains_var_Baseline Natural Flux
+9336 7.5016333e+08
+Btw_chains_var_Atmospheric Lifetime of N2O
+9336 0.1625385
+Btw_chains_var_Effective Sensitivity of Temperature on N2O Flux
+9336 2.2754682e-08
+Btw_chains_var_Payoff
+9336 -7385.6135
+Wth_chains_mean_var_Baseline Natural Flux
+9336 2.8888595e+10
+Wth_chains_mean_var_Atmospheric Lifetime of N2O
+9336 5.5763421
+Wth_chains_mean_var_Effective Sensitivity of Temperature on N2O Flux
+9336 1.4147948e-06
+Wth_chains_mean_var_Payoff
+9336 -4.359469e+08
+PSRF_Baseline Natural Flux
+9336 1.0257527
+PSRF_Atmospheric Lifetime of N2O
+9336 1.0289331
+PSRF_Effective Sensitivity of Temperature on N2O Flux
+9336 1.0158686
+PSRF_Payoff
+9336 -0.99980214
+Accept_rt[Chain_0]
+9336 0.13304721
+Accepted[Chain_0]
+9336 124
+Rejected[Chain_0]
+9336 808
+Accept_rt[Chain_1]
+9336 0.14822771
+Accepted[Chain_1]
+9336 138
+Rejected[Chain_1]
+9336 793
+Accept_rt[Chain_2]
+9336 0.24919441
+Accepted[Chain_2]
+9336 232
+Rejected[Chain_2]
+9336 699
+Accept_rt[Chain_3]
+9336 0.20515575
+Accepted[Chain_3]
+9336 191
+Rejected[Chain_3]
+9336 740
+Accept_rt[Chain_4]
+9336 0.13426423
+Accepted[Chain_4]
+9336 125
+Rejected[Chain_4]
+9336 806
+Accept_rt[Chain_5]
+9336 0.12889366
+Accepted[Chain_5]
+9336 120
+Rejected[Chain_5]
+9336 811
+Accept_rt[Chain_6]
+9336 0.13533835
+Accepted[Chain_6]
+9336 126
+Rejected[Chain_6]
+9336 805
+Accept_rt[Chain_7]
+9336 0.16326531
+Accepted[Chain_7]
+9336 152
+Rejected[Chain_7]
+9336 779
+Accept_rt[Chain_8]
+9336 0.12244898
+Accepted[Chain_8]
+9336 114
+Rejected[Chain_8]
+9336 817
+Accept_rt[Chain_9]
+9336 0.1396348
+Accepted[Chain_9]
+9336 130
+Rejected[Chain_9]
+9336 801

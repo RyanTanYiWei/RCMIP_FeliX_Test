@@ -6,8 +6,8 @@ Translated using PySD
 from pathlib import Path
 import numpy as np
 
-from pysd.py_backend.functions import ramp, if_then_else
-from pysd.py_backend.statefuls import Smooth, Initial, Integ
+from pysd.py_backend.functions import if_then_else, ramp
+from pysd.py_backend.statefuls import Initial, Integ, Smooth
 from pysd.py_backend.lookups import HardcodedLookups
 from pysd import Component
 
@@ -99,14 +99,28 @@ def time_step():
 
 
 @component.add(
-    name="Net Ocean to Atmosphere Flux CO2",
-    units="MTonCO2/Year",
+    name="Airborne Fraction",
+    units="Dmnl",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"flux_atmosphere_to_ocean": 1, "tonco2_to_mtonco2": 1, "co2_to_c": 1},
+    depends_on={
+        "total_c_emission": 2,
+        "ch4_oxidation": 1,
+        "flux_humus_to_atmosphere": 1,
+        "flux_biomass_to_atmosphere": 1,
+        "flux_atmosphere_to_biomass": 1,
+        "flux_atmosphere_to_ocean": 1,
+    },
 )
-def net_ocean_to_atmosphere_flux_co2():
-    return flux_atmosphere_to_ocean() * tonco2_to_mtonco2() * co2_to_c()
+def airborne_fraction():
+    return (
+        total_c_emission()
+        + ch4_oxidation()
+        + flux_humus_to_atmosphere()
+        + flux_biomass_to_atmosphere()
+        - flux_atmosphere_to_biomass()
+        - flux_atmosphere_to_ocean()
+    ) / float(np.maximum(total_c_emission(), 1))
 
 
 @component.add(
@@ -114,10 +128,366 @@ def net_ocean_to_atmosphere_flux_co2():
     units="MTonCH4/Year",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"total_ch4_emission": 1, "mt_ch4_to_tch4": 1},
+    depends_on={"total_ch4_emission": 1, "total_ch4_breakdown": 1, "mt_ch4_to_tch4": 1},
 )
 def total_ch4_emission_in_mtonch4():
-    return total_ch4_emission() / mt_ch4_to_tch4()
+    return (total_ch4_emission() - total_ch4_breakdown()) / mt_ch4_to_tch4()
+
+
+@component.add(
+    name="Net Primary Productivity",
+    units="MTonCO2/Year",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={
+        "co2_to_c": 1,
+        "flux_atmosphere_to_biomass": 1,
+        "flux_biomass_to_humus": 1,
+        "tonco2_to_mtonco2": 1,
+    },
+)
+def net_primary_productivity():
+    return (
+        co2_to_c()
+        * (flux_atmosphere_to_biomass() - flux_biomass_to_humus())
+        * tonco2_to_mtonco2()
+    )
+
+
+@component.add(
+    name="Heat Content 0 700m",
+    units="ZJ",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"heat_in_deep_ocean_1": 1, "conversion_to_zj": 1},
+)
+def heat_content_0_700m():
+    return heat_in_deep_ocean_1() * conversion_to_zj()
+
+
+@component.add(
+    name="Heat Content 700 2000m",
+    units="ZJ",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"heat_in_deep_ocean_2": 1, "conversion_to_zj": 1},
+)
+def heat_content_700_2000m():
+    return heat_in_deep_ocean_2() * conversion_to_zj()
+
+
+@component.add(
+    name="Heat Content Ocean",
+    units="ZJ",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={
+        "heat_in_deep_ocean_1": 1,
+        "heat_in_deep_ocean_2": 1,
+        "heat_in_deep_ocean_3": 1,
+        "conversion_to_zj": 1,
+    },
+)
+def heat_content_ocean():
+    return (
+        heat_in_deep_ocean_1() + heat_in_deep_ocean_2() + heat_in_deep_ocean_3()
+    ) * conversion_to_zj()
+
+
+@component.add(
+    name="Effective Sensitivity of Temperature on N2O Flux",
+    units="1/DegreesC",
+    comp_type="Constant",
+    comp_subtype="Normal",
+)
+def effective_sensitivity_of_temperature_on_n2o_flux():
+    return 0
+
+
+@component.add(
+    name="Baseline Natural Flux",
+    units="TonN2O/Year",
+    limits=(10000000.0, 20000000.0, 1000000.0),
+    comp_type="Constant",
+    comp_subtype="Normal",
+)
+def baseline_natural_flux():
+    return 20000000.0
+
+
+@component.add(
+    name="Effect of Warming on N2O Release from Biological Activity",
+    units="Dmnl",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={
+        "effective_sensitivity_of_temperature_on_n2o_flux": 1,
+        "temperature_change_from_preindustrial": 1,
+    },
+)
+def effect_of_warming_on_n2o_release_from_biological_activity():
+    return (
+        1
+        + effective_sensitivity_of_temperature_on_n2o_flux()
+        * temperature_change_from_preindustrial()
+    )
+
+
+@component.add(
+    name="Hist Conc N2O",
+    comp_type="Auxiliary",
+    comp_subtype="with Lookup",
+    depends_on={"time": 1},
+)
+def hist_conc_n2o():
+    return np.interp(
+        time(),
+        [
+            1900.0,
+            1901.0,
+            1902.0,
+            1903.0,
+            1904.0,
+            1905.0,
+            1906.0,
+            1907.0,
+            1908.0,
+            1909.0,
+            1910.0,
+            1911.0,
+            1912.0,
+            1913.0,
+            1914.0,
+            1915.0,
+            1916.0,
+            1917.0,
+            1918.0,
+            1919.0,
+            1920.0,
+            1921.0,
+            1922.0,
+            1923.0,
+            1924.0,
+            1925.0,
+            1926.0,
+            1927.0,
+            1928.0,
+            1929.0,
+            1930.0,
+            1931.0,
+            1932.0,
+            1933.0,
+            1934.0,
+            1935.0,
+            1936.0,
+            1937.0,
+            1938.0,
+            1939.0,
+            1940.0,
+            1941.0,
+            1942.0,
+            1943.0,
+            1944.0,
+            1945.0,
+            1946.0,
+            1947.0,
+            1948.0,
+            1949.0,
+            1950.0,
+            1951.0,
+            1952.0,
+            1953.0,
+            1954.0,
+            1955.0,
+            1956.0,
+            1957.0,
+            1958.0,
+            1959.0,
+            1960.0,
+            1961.0,
+            1962.0,
+            1963.0,
+            1964.0,
+            1965.0,
+            1966.0,
+            1967.0,
+            1968.0,
+            1969.0,
+            1970.0,
+            1971.0,
+            1972.0,
+            1973.0,
+            1974.0,
+            1975.0,
+            1976.0,
+            1977.0,
+            1978.0,
+            1979.0,
+            1980.0,
+            1981.0,
+            1982.0,
+            1983.0,
+            1984.0,
+            1985.0,
+            1986.0,
+            1987.0,
+            1988.0,
+            1989.0,
+            1990.0,
+            1991.0,
+            1992.0,
+            1993.0,
+            1994.0,
+            1995.0,
+            1996.0,
+            1997.0,
+            1998.0,
+            1999.0,
+            2000.0,
+            2001.0,
+            2002.0,
+            2003.0,
+            2004.0,
+            2005.0,
+            2006.0,
+            2007.0,
+            2008.0,
+            2009.0,
+            2010.0,
+            2011.0,
+            2012.0,
+            2013.0,
+            2014.0,
+        ],
+        [
+            279.454,
+            279.613,
+            279.861,
+            280.156,
+            280.432,
+            280.705,
+            280.98,
+            281.276,
+            281.611,
+            281.95,
+            282.314,
+            282.721,
+            283.019,
+            283.362,
+            283.716,
+            284.047,
+            284.312,
+            284.615,
+            284.805,
+            284.851,
+            284.929,
+            285.039,
+            285.17,
+            285.467,
+            285.605,
+            285.652,
+            285.692,
+            285.74,
+            285.833,
+            285.891,
+            285.938,
+            286.124,
+            286.222,
+            286.371,
+            286.467,
+            286.587,
+            286.747,
+            286.951,
+            287.191,
+            287.387,
+            287.619,
+            287.864,
+            288.138,
+            288.781,
+            289.0,
+            289.227,
+            289.427,
+            289.511,
+            289.556,
+            289.598,
+            289.739,
+            289.86,
+            290.025,
+            290.334,
+            290.548,
+            290.844,
+            291.187,
+            291.512,
+            291.772,
+            291.987,
+            292.283,
+            292.602,
+            292.945,
+            293.327,
+            293.685,
+            294.045,
+            294.453,
+            294.86,
+            295.269,
+            295.681,
+            296.098,
+            296.522,
+            296.955,
+            297.399,
+            297.855,
+            298.326,
+            298.814,
+            299.319,
+            299.845,
+            300.393,
+            300.965,
+            301.562,
+            302.187,
+            302.842,
+            303.528,
+            304.247,
+            305.002,
+            305.793,
+            306.624,
+            307.831,
+            308.683,
+            309.233,
+            309.725,
+            310.099,
+            310.808,
+            311.279,
+            312.298,
+            313.183,
+            313.907,
+            314.709,
+            315.759,
+            316.493,
+            317.101,
+            317.73,
+            318.357,
+            319.13,
+            319.933,
+            320.646,
+            321.575,
+            322.275,
+            323.141,
+            324.159,
+            325.005,
+            325.919,
+            326.988,
+        ],
+    )
+
+
+@component.add(
+    name="Net Ocean to Atmosphere Flux CO2",
+    units="MTonCO2/Year",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"flux_atmosphere_to_ocean": 1, "tonco2_to_mtonco2": 1, "co2_to_c": 1},
+)
+def net_ocean_to_atmosphere_flux_co2():
+    return -flux_atmosphere_to_ocean() * tonco2_to_mtonco2() * co2_to_c()
 
 
 @component.add(
@@ -176,27 +546,6 @@ def unit_w_to_js():
 
 
 @component.add(
-    name="Airborne Fraction",
-    units="Dmnl",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={
-        "total_c_emission": 2,
-        "ch4_oxidation": 2,
-        "flux_atmosphere_to_biomass": 1,
-        "flux_atmosphere_to_ocean": 1,
-    },
-)
-def airborne_fraction():
-    return (
-        total_c_emission()
-        + ch4_oxidation()
-        - flux_atmosphere_to_biomass()
-        - flux_atmosphere_to_ocean()
-    ) / (total_c_emission() + ch4_oxidation())
-
-
-@component.add(
     name="Carbon Pool Atmosphere",
     units="MTonCO2",
     comp_type="Auxiliary",
@@ -227,60 +576,6 @@ def carbon_pool_plant():
 )
 def carbon_pool_soil():
     return c_in_humus() * co2_to_c() * tonco2_to_mtonco2()
-
-
-@component.add(
-    name="Heat Content 0 700m",
-    units="ZJ",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={
-        "heat_in_atmosphere_and_upper_ocean": 1,
-        "heat_in_deep_ocean_1": 1,
-        "conversion_to_zj": 1,
-    },
-)
-def heat_content_0_700m():
-    return (
-        heat_in_atmosphere_and_upper_ocean() + heat_in_deep_ocean_1()
-    ) * conversion_to_zj()
-
-
-@component.add(
-    name="Heat Content 700 2000m",
-    units="ZJ",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={
-        "heat_in_deep_ocean_1": 1,
-        "heat_in_deep_ocean_2": 1,
-        "conversion_to_zj": 1,
-    },
-)
-def heat_content_700_2000m():
-    return (heat_in_deep_ocean_1() + heat_in_deep_ocean_2()) * conversion_to_zj()
-
-
-@component.add(
-    name="Heat Content Ocean",
-    units="ZJ",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={
-        "heat_in_atmosphere_and_upper_ocean": 1,
-        "heat_in_deep_ocean_1": 1,
-        "heat_in_deep_ocean_2": 1,
-        "heat_in_deep_ocean_3": 1,
-        "conversion_to_zj": 1,
-    },
-)
-def heat_content_ocean():
-    return (
-        heat_in_atmosphere_and_upper_ocean()
-        + heat_in_deep_ocean_1()
-        + heat_in_deep_ocean_2()
-        + heat_in_deep_ocean_3()
-    ) * conversion_to_zj()
 
 
 @component.add(
@@ -329,17 +624,6 @@ def net_land_to_atmosphere_flux_co2():
 
 
 @component.add(
-    name="Net Primary Productivity",
-    units="MTonCO2/Year",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"co2_to_c": 1, "flux_atmosphere_to_biomass": 1, "tonco2_to_mtonco2": 1},
-)
-def net_primary_productivity():
-    return co2_to_c() * flux_atmosphere_to_biomass() * tonco2_to_mtonco2()
-
-
-@component.add(
     name="TonCO2 to MTonCO2",
     units="MTonCO2/TonCO2",
     comp_type="Constant",
@@ -347,6 +631,58 @@ def net_primary_productivity():
 )
 def tonco2_to_mtonco2():
     return 1e-06
+
+
+@component.add(
+    name="INIT C in Atmosphere",
+    units="TonC",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"atmospheric_co2_law_dome_1850": 1, "gtc_to_tonc": 1, "ppm_to_gtc": 1},
+)
+def init_c_in_atmosphere():
+    """
+    Initial carbon in atmosphere.
+    """
+    return atmospheric_co2_law_dome_1850() * gtc_to_tonc() * ppm_to_gtc()
+
+
+@component.add(
+    name="Natural N2O Emission",
+    units="TonN2O/Year",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={
+        "baseline_natural_flux": 1,
+        "effect_of_warming_on_n2o_release_from_biological_activity": 1,
+    },
+)
+def natural_n2o_emission():
+    return (
+        baseline_natural_flux()
+        * effect_of_warming_on_n2o_release_from_biological_activity()
+    )
+
+
+@component.add(
+    name="Total N2O Breakdown",
+    units="TonN2O/Year",
+    comp_type="Auxiliary",
+    comp_subtype="Normal",
+    depends_on={"n2o_in_atmosphere": 1, "atmospheric_lifetime_of_n2o": 1},
+)
+def total_n2o_breakdown():
+    return n2o_in_atmosphere() / atmospheric_lifetime_of_n2o()
+
+
+@component.add(
+    name="Atmospheric Lifetime of N2O",
+    units="Year",
+    comp_type="Constant",
+    comp_subtype="Normal",
+)
+def atmospheric_lifetime_of_n2o():
+    return 103.322
 
 
 @component.add(
@@ -638,16 +974,6 @@ def natural_ch4_emissions():
     There is a substantial discrepancy between estimates of natural global annual methane emissions from bottom-up and top-down methods, which yield values of 370 Mt and 215 Mt, respectively (Saunois et al. 2020). UNEP Global Methane Assessment 2030 Baseline Report
     """
     return 230000000.0
-
-
-@component.add(
-    name="Natural N2O Emission",
-    units="TonN2O/Year",
-    comp_type="Constant",
-    comp_subtype="Normal",
-)
-def natural_n2o_emission():
-    return 17400000.0
 
 
 @component.add(
@@ -1520,7 +1846,7 @@ def nvs_2xco2_forcing():
     units="W/(m*m)",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"c1": 1, "atmospheric_concentration_n2o": 1, "dmnl_adjustment_ppb": 1},
+    depends_on={"c1": 1, "dmnl_adjustment_ppb": 1, "atmospheric_concentration_n2o": 1},
 )
 def a_n2o():
     return c1() * float(
@@ -1536,9 +1862,9 @@ def a_n2o():
     depends_on={
         "atmospheric_concentration_co2": 4,
         "c_a_max": 1,
-        "d1": 3,
         "a1": 2,
         "b1": 2,
+        "d1": 3,
         "atmospheric_co2_concentration_preindustrial": 3,
     },
 )
@@ -1608,16 +1934,16 @@ def atmospheric_and_upper_ocean_heat_capacity():
 
 
 @component.add(
-    name="Atmospheric CH4 Concentration 1850 AR6",
+    name="Atmospheric CH4 Concentration 1900 AR6",
     units="ppb",
     comp_type="Constant",
     comp_subtype="Normal",
 )
-def atmospheric_ch4_concentration_1850_ar6():
+def atmospheric_ch4_concentration_1900_ar6():
     """
     https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_AnnexIII.p df pg 2141
     """
-    return 808
+    return 925
 
 
 @component.add(
@@ -1631,13 +1957,13 @@ def atmospheric_ch4_concentration_preindustrial():
 
 
 @component.add(
-    name="Atmospheric CO2 Concentration 1850 AR6",
+    name="Atmospheric CO2 Concentration 1900 AR6",
     units="ppm",
     comp_type="Constant",
     comp_subtype="Normal",
 )
-def atmospheric_co2_concentration_1850_ar6():
-    return 285.5
+def atmospheric_co2_concentration_1900_ar6():
+    return 296.4
 
 
 @component.add(
@@ -1703,26 +2029,16 @@ def atmospheric_concentration_n2o():
 
 
 @component.add(
-    name="Atmospheric Lifetime of N2O",
-    units="Year",
-    comp_type="Constant",
-    comp_subtype="Normal",
-)
-def atmospheric_lifetime_of_n2o():
-    return 117
-
-
-@component.add(
-    name="Atmospheric N2O Concentration 1850 AR6",
+    name="Atmospheric N2O Concentration 1900 AR6",
     units="ppb",
     comp_type="Constant",
     comp_subtype="Normal",
 )
-def atmospheric_n2o_concentration_1850_ar6():
+def atmospheric_n2o_concentration_1900_ar6():
     """
-    https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_AnnexIII.p df pg 2141
+    https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_AnnexIII.pdf pg 2141 278.9
     """
-    return 273.2
+    return 278.9
 
 
 @component.add(
@@ -1795,9 +2111,9 @@ def buff_c_coeff():
     comp_subtype="Normal",
     depends_on={
         "ref_buffer_factor": 1,
+        "buff_c_coeff": 1,
         "preindustrial_c_in_mixed_layer": 1,
         "c_in_mixed_layer": 1,
-        "buff_c_coeff": 1,
     },
 )
 def buffer_factor():
@@ -2180,13 +2496,13 @@ def ch4_radiative_efficiency():
     depends_on={
         "time": 1,
         "ch4_radiative_forcing_history": 1,
-        "ch4_radiative_forcing_rcp26": 1,
-        "ch4_radiative_forcing_rcp19": 1,
+        "ch4_radiative_forcing_rcp45": 1,
+        "rcp_scenario": 5,
         "ch4_radiative_forcing_rcp34": 1,
         "ch4_radiative_forcing_rcp85": 1,
-        "ch4_radiative_forcing_rcp45": 1,
+        "ch4_radiative_forcing_rcp26": 1,
+        "ch4_radiative_forcing_rcp19": 1,
         "ch4_radiative_forcing_rcp60": 1,
-        "rcp_scenario": 5,
     },
 )
 def ch4_radiative_forcing():
@@ -2242,8 +2558,8 @@ def ch4_radiative_forcing_history():
     depends_on={
         "ch4_radiative_efficiency": 1,
         "atmospheric_concentration_ch4": 1,
-        "atmospheric_ch4_concentration_preindustrial": 1,
         "dmnl_adjustment_ppb": 2,
+        "atmospheric_ch4_concentration_preindustrial": 1,
     },
 )
 def ch4_radiative_forcing_new():
@@ -3205,9 +3521,9 @@ def total_co2_emissions():
     depends_on={
         "preindustrial_c_in_mixed_layer": 1,
         "effect_of_temp_on_c_flux_atm_ml": 1,
+        "buffer_factor": 1,
         "c_in_atmosphere": 1,
         "preindustrial_c_in_atmosphere": 1,
-        "buffer_factor": 1,
     },
 )
 def equil_c_in_mixed_layer():
@@ -3256,13 +3572,13 @@ def equilibrium_temperature():
     depends_on={
         "time": 1,
         "f_gases_radiative_forcing_history": 1,
+        "f_gases_radiative_forcing_rcp19": 1,
+        "rcp_scenario": 5,
+        "f_gases_radiative_forcing_rcp45": 1,
         "f_gases_radiative_forcing_rcp26": 1,
         "f_gases_radiative_forcing_rcp85": 1,
         "f_gases_radiative_forcing_rcp34": 1,
-        "f_gases_radiative_forcing_rcp19": 1,
         "f_gases_radiative_forcing_rcp60": 1,
-        "rcp_scenario": 5,
-        "f_gases_radiative_forcing_rcp45": 1,
     },
 )
 def f_gases_radiative_forcing():
@@ -3446,9 +3762,9 @@ def feedback_cooling():
     comp_subtype="Normal",
     depends_on={
         "initial_net_primary_production": 1,
+        "biostimulation_coefficient": 1,
         "c_in_atmosphere": 1,
         "preindustrial_c_in_atmosphere": 1,
-        "biostimulation_coefficient": 1,
     },
 )
 def flux_atmosphere_to_biomass():
@@ -3875,9 +4191,9 @@ def heat_transfer_4():
     depends_on={
         "heat_transfer_rate": 1,
         "mean_depth_of_adjacent_m_1_layers": 1,
+        "heat_diffusion_covar": 2,
         "eddy_diff_coeff_m_1": 1,
         "eddy_diff_coeff_mean_m_1": 1,
-        "heat_diffusion_covar": 2,
     },
 )
 def heat_transfer_coefficient_1():
@@ -3898,9 +4214,9 @@ def heat_transfer_coefficient_1():
     depends_on={
         "heat_transfer_rate": 1,
         "mean_depth_of_adjacent_1_2_layers": 1,
+        "heat_diffusion_covar": 2,
         "eddy_diff_coeff_mean_1_2": 1,
         "eddy_diff_coeff_1_2": 1,
-        "heat_diffusion_covar": 2,
     },
 )
 def heat_transfer_coefficient_2():
@@ -3921,9 +4237,9 @@ def heat_transfer_coefficient_2():
     depends_on={
         "heat_transfer_rate": 1,
         "mean_depth_of_adjacent_2_3_layers": 1,
+        "heat_diffusion_covar": 2,
         "eddy_diff_coeff_2_3": 1,
         "eddy_diff_coeff_mean_2_3": 1,
-        "heat_diffusion_covar": 2,
     },
 )
 def heat_transfer_coefficient_3():
@@ -3944,9 +4260,9 @@ def heat_transfer_coefficient_3():
     depends_on={
         "heat_transfer_rate": 1,
         "mean_depth_of_adjacent_3_4_layers": 1,
+        "heat_diffusion_covar": 2,
         "eddy_diff_coeff_3_4": 1,
         "eddy_diff_coeff_mean_3_4": 1,
-        "heat_diffusion_covar": 2,
     },
 )
 def heat_transfer_coefficient_4():
@@ -3980,12 +4296,12 @@ def heat_transfer_rate():
     depends_on={
         "time": 1,
         "hfc_radiative_forcing_history": 1,
+        "rcp_scenario": 4,
         "hfc_radiative_forcing_message_rcp85": 1,
-        "hfc_radiative_forcing_aim_rcp60": 1,
-        "hfc_radiative_forcing_aim_rcp7": 1,
         "hfc_radiative_forcing_image_rcp26": 1,
         "hfc_radiative_forcing_minicam_rcp45": 1,
-        "rcp_scenario": 4,
+        "hfc_radiative_forcing_aim_rcp60": 1,
+        "hfc_radiative_forcing_aim_rcp7": 1,
     },
 )
 def hfc_radiative_forcing():
@@ -4156,20 +4472,6 @@ def init_atmospheric_and_upper_ocean_temperature():
 
 
 @component.add(
-    name="INIT C in Atmosphere",
-    units="TonC",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"atmospheric_co2_law_dome_1850": 1, "gtc_to_tonc": 1, "ppm_to_gtc": 1},
-)
-def init_c_in_atmosphere():
-    """
-    Initial carbon in atmosphere.
-    """
-    return atmospheric_co2_law_dome_1850() * gtc_to_tonc() * ppm_to_gtc()
-
-
-@component.add(
     name="INIT C in Biomass",
     units="TonC",
     comp_type="Stateful",
@@ -4317,10 +4619,10 @@ def init_c_in_mixed_ocean():
     units="TonCH4",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"atmospheric_ch4_concentration_1850_ar6": 1, "tonch4_to_ppb": 1},
+    depends_on={"atmospheric_ch4_concentration_1900_ar6": 1, "tonch4_to_ppb": 1},
 )
 def init_ch4_in_atmosphere():
-    return atmospheric_ch4_concentration_1850_ar6() / tonch4_to_ppb()
+    return atmospheric_ch4_concentration_1900_ar6() / tonch4_to_ppb()
 
 
 @component.add(
@@ -4380,10 +4682,10 @@ def init_deep_ocean_4_temperature():
     units="TonN2O",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"atmospheric_n2o_concentration_1850_ar6": 1, "tonn2o_to_ppb": 1},
+    depends_on={"atmospheric_n2o_concentration_1900_ar6": 1, "tonn2o_to_ppb": 1},
 )
 def init_n2o_in_atmosphere():
-    return atmospheric_n2o_concentration_1850_ar6() / tonn2o_to_ppb()
+    return atmospheric_n2o_concentration_1900_ar6() / tonn2o_to_ppb()
 
 
 @component.add(
@@ -4477,7 +4779,7 @@ def layer_depth_4():
     units="Year",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"layer_depth_2": 2, "eddy_diff_coeff_1_2": 1, "layer_depth_1": 1},
+    depends_on={"layer_depth_2": 2, "layer_depth_1": 1, "eddy_diff_coeff_1_2": 1},
 )
 def layer_time_constant_1_2():
     """
@@ -4509,7 +4811,7 @@ def layer_time_constant_2_3():
     units="Year",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"layer_depth_4": 2, "eddy_diff_coeff_3_4": 1, "layer_depth_3": 1},
+    depends_on={"layer_depth_4": 2, "layer_depth_3": 1, "eddy_diff_coeff_3_4": 1},
 )
 def layer_time_constant_3_4():
     """
@@ -4525,7 +4827,7 @@ def layer_time_constant_3_4():
     units="Year",
     comp_type="Auxiliary",
     comp_subtype="Normal",
-    depends_on={"layer_depth_1": 2, "eddy_diff_coeff_m_1": 1, "mixed_layer_depth": 1},
+    depends_on={"layer_depth_1": 2, "mixed_layer_depth": 1, "eddy_diff_coeff_m_1": 1},
 )
 def layer_time_constant_m_1():
     """
@@ -4751,13 +5053,13 @@ _integ_n2o_in_atmosphere = Integ(
     depends_on={
         "time": 1,
         "n2o_radiative_forcing_history": 1,
-        "n2o_radiative_forcing_rcp19": 1,
-        "n2o_radiative_forcing_rcp26": 1,
         "n2o_radiative_forcing_rcp60": 1,
-        "n2o_radiative_forcing_rcp45": 1,
-        "n2o_radiative_forcing_rcp34": 1,
         "n2o_radiative_forcing_rcp85": 1,
         "rcp_scenario": 5,
+        "n2o_radiative_forcing_rcp45": 1,
+        "n2o_radiative_forcing_rcp26": 1,
+        "n2o_radiative_forcing_rcp34": 1,
+        "n2o_radiative_forcing_rcp19": 1,
     },
 )
 def n2o_radiative_forcing():
@@ -4800,9 +5102,9 @@ def n2o_radiative_forcing():
         "a2": 1,
         "dmnl_adjustment_ppm": 1,
         "atmospheric_concentration_co2": 1,
-        "atmospheric_concentration_n2o": 1,
         "dmnl_adjustment_ppb": 2,
         "b2": 1,
+        "atmospheric_concentration_n2o": 1,
         "atmospheric_concentration_ch4": 1,
         "c2": 1,
         "d2": 1,
@@ -4838,9 +5140,9 @@ def n2o_radiative_forcing_history():
     comp_subtype="Normal",
     depends_on={
         "n2o_radiative_forcing_coefficient": 1,
-        "atmospheric_concentration_n2o": 1,
-        "atmospheric_n2o_concentration_preindustrial": 1,
         "dmnl_adjustment_ppb": 2,
+        "atmospheric_n2o_concentration_preindustrial": 1,
+        "atmospheric_concentration_n2o": 1,
     },
 )
 def n2o_radiative_forcing_new():
@@ -4997,13 +5299,13 @@ def other_anhtropogenic_radiative_forcing_rcp60():
     depends_on={
         "time": 1,
         "other_anthropogenic_radiative_forcing_history": 1,
-        "other_anthropogenic_radiative_forcing_rcp45": 1,
         "other_anthropogenic_radiative_forcing_rcp34": 1,
-        "other_anthropogenic_radiative_forcing_rcp85": 1,
-        "other_anhtropogenic_radiative_forcing_rcp60": 1,
-        "other_anthropogenic_radiative_forcing_rcp26": 1,
-        "other_anthropogenic_radiative_forcing_rcp19": 1,
         "rcp_scenario": 5,
+        "other_anthropogenic_radiative_forcing_rcp19": 1,
+        "other_anhtropogenic_radiative_forcing_rcp60": 1,
+        "other_anthropogenic_radiative_forcing_rcp85": 1,
+        "other_anthropogenic_radiative_forcing_rcp45": 1,
+        "other_anthropogenic_radiative_forcing_rcp26": 1,
     },
 )
 def other_anthropogenic_radiative_forcing():
@@ -5168,11 +5470,11 @@ def other_forcings():
     depends_on={
         "time": 1,
         "other_radiative_forcing_history": 1,
-        "other_radiative_forcing_image_rcp26": 1,
-        "other_radiative_forcing_aim_rcp7": 1,
-        "other_radiative_forcing_minicam_rcp45": 1,
-        "other_radiative_forcing_message_rcp85": 1,
         "rcp_scenario": 4,
+        "other_radiative_forcing_message_rcp85": 1,
+        "other_radiative_forcing_image_rcp26": 1,
+        "other_radiative_forcing_minicam_rcp45": 1,
+        "other_radiative_forcing_aim_rcp7": 1,
         "other_radiative_forcing_aim_rcp60": 1,
     },
 )
@@ -7558,6 +7860,9 @@ def total_ch4_emissions():
     depends_on={"time": 1},
 )
 def total_n2o_emissions():
+    """
+    ([(0,0)-(10,10)],(1900,1356.16),(1901,1369.1),(1902,1384.52),(1903,1399.36) ,(1904,1415.6),(1905,1432.56),(1906,1449.95),(1907,1466.75),(1908,1483.12), (1909,1499.1),(1910,1515.94),(1911,1533.71),(1912,1559.23),(1913,1589.12),( 1914,1621.62),(1915,1656.96),(1916,1693.36),(1917,1728.66),(1918,1761.61),( 1919,1791.47),(1920,1818.81),(1921,1843.61),(1922,1867.74),(1923,1893.42),( 1924,1920.28),(1925,1944.75),(1926,1968.03),(1927,1990.27),(1928,2010.73),( 1929,2028.07),(1930,2043.07),(1931,2053.98),(1932,2064.65),(1933,2073.56),( 1934,2083.43),(1935,2093.47),(1936,2103.27),(1937,2115.58),(1938,2129.1),(1 939,2147.48),(1940,2167.53),(1941,2242.12),(1942,2403.56),(1943,2636.05),(1 944,2912.5),(1945,3215.87),(1946,3522.87),(1947,3815.76),(1948,4068.7),(194 9,4264.1),(1950,4378.5),(1951,4447.58),(1952,4514.63),(1953,4585.34),(1954, 4658.92),(1955,4738.57),(1956,4819.78),(1957,4906.31),(1958,5002.82),(1959, 5106.72),(1960,5222.37),(1961,5570.29),(1962,5779.89),(1963,5976.28),(1964, 6199.34),(1965,6465.56),(1966,6773.51),(1967,7041.51),(1968,7256.01),(1969, 7435.62),(1970,7406.67),(1971,7327.06),(1972,7746.9),(1973,7935.57),(1974,7 909.79),(1975,8180.65),(1976,8409.33),(1977,8640.44),(1978,8837.87),(1979,9 123.76),(1980,9227.26),(1981,9121.12),(1982,9494.52),(1983,9530.29),(1984,9 421.16),(1985,9421.44),(1986,9620.41),(1987,9977.12),(1988,9722.72),(1989,9 842.47),(1990,9862.3),(1991,9968.82),(1992,9990.08),(1993,9915.09),(1994,10 121),(1995,10218.8),(1996,10278.8),(1997,10590.2),(1998,10128.4),(1999,9868 .59),(2000,9603.19),(2001,9722.25),(2002,9991.77),(2003,10099.8),(2004,1035 4.6),(2005,10516.6),(2006,10802.6),(2007,10363.5),(2008,10429.7),(2009,1054 6.7),(2010,10539.8),(2011,10446.4),(2012,10593.9),(2013,10759),(2014,10866. 3),(2100,10866.3) )
+    """
     return np.interp(
         time(),
         [
@@ -7676,6 +7981,15 @@ def total_n2o_emissions():
             2012.0,
             2013.0,
             2014.0,
+            2015.0,
+            2020.0,
+            2030.0,
+            2040.0,
+            2050.0,
+            2060.0,
+            2070.0,
+            2080.0,
+            2090.0,
             2100.0,
         ],
         [
@@ -7794,7 +8108,16 @@ def total_n2o_emissions():
             10593.9,
             10759.0,
             10866.3,
-            10866.3,
+            10900.0,
+            11774.9,
+            13291.8,
+            14526.6,
+            15634.9,
+            16638.0,
+            17624.3,
+            18581.1,
+            19626.8,
+            20654.1,
         ],
     )
 
@@ -7807,17 +8130,6 @@ def total_n2o_emissions():
 )
 def total_moles_of_air_in_atmosphere():
     return 1.77e20
-
-
-@component.add(
-    name="Total N2O Breakdown",
-    units="TonN2O/Year",
-    comp_type="Auxiliary",
-    comp_subtype="Normal",
-    depends_on={"n2o_in_atmosphere": 1, "atmospheric_lifetime_of_n2o": 1},
-)
-def total_n2o_breakdown():
-    return n2o_in_atmosphere() / atmospheric_lifetime_of_n2o()
 
 
 @component.add(
@@ -7903,9 +8215,9 @@ def total_radiative_forcing_minicam_rcp45():
     comp_subtype="Normal",
     depends_on={
         "area": 1,
-        "land_area_fraction": 2,
         "land_thickness": 1,
         "mixed_layer_depth": 1,
+        "land_area_fraction": 2,
     },
 )
 def upper_layer_volume_vu():

@@ -1,0 +1,243 @@
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 6e+06.
+INFO:          Atmospheric Lifetime of N2O = 50.
+INFO:          Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 1.
+INFO:        Optimizations = 1.
+INFO:        Pass = 0.
+INFO:        Payoff = -6.5833e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 1.99512e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.576.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 88.
+INFO:        Optimizations = 1.
+INFO:        Pass = 3.
+INFO:        Payoff = -13869.3.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	66          	88          .
+INFO:        Iterations                    	4           	6           .
+INFO:         Baseline Natural Flux        	19951238    	19951238    .
+INFO:         Atmospheric Lifetime of N2O  	103.57554   	103.57554   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-13869.261  	-13869.261  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 6e+06.
+INFO:          Atmospheric Lifetime of N2O = 50.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.04.
+INFO:        Simulations = 89.
+INFO:        Optimizations = 2.
+INFO:        Pass = 3.
+INFO:        Payoff = -6.49871e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 180.
+INFO:        Optimizations = 2.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	147         	180         .
+INFO:        Iterations                    	4           	13          .
+INFO:         Baseline Natural Flux        	20000000    	20000000    .
+INFO:         Atmospheric Lifetime of N2O  	103.31142   	103.36863   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-13862.727  	-13851.038  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 6e+06.
+INFO:          Atmospheric Lifetime of N2O = 130.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 181.
+INFO:        Optimizations = 3.
+INFO:        Pass = 3.
+INFO:        Payoff = -1.08731e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 411.
+INFO:        Optimizations = 3.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	374         	411         .
+INFO:        Iterations                    	12          	28          .
+INFO:         Baseline Natural Flux        	20000000    	19985178    .
+INFO:         Atmospheric Lifetime of N2O  	103.43093   	103.43093   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-13879.157  	-13856.272  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 6e+06.
+INFO:          Atmospheric Lifetime of N2O = 130.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.04.
+INFO:        Simulations = 412.
+INFO:        Optimizations = 4.
+INFO:        Pass = 3.
+INFO:        Payoff = -1.03582e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:         *Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 607.
+INFO:        Optimizations = 4.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	479         	607         .
+INFO:        Iterations                    	4           	39          .
+INFO:         Baseline Natural Flux        	15225577    	20000000    .
+INFO:         Atmospheric Lifetime of N2O  	129.43545   	103.51158   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-26580.423  	-13978.688  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:         *Atmospheric Lifetime of N2O = 50.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 608.
+INFO:        Optimizations = 5.
+INFO:        Pass = 3.
+INFO:        Payoff = -2.76199e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 708.
+INFO:        Optimizations = 5.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	687         	708         .
+INFO:        Iterations                    	5           	46          .
+INFO:         Baseline Natural Flux        	19957579    	19957579    .
+INFO:         Atmospheric Lifetime of N2O  	103.55394   	103.55394   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-13867.217  	-13867.217  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 50.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.04.
+INFO:        Simulations = 709.
+INFO:        Optimizations = 6.
+INFO:        Pass = 3.
+INFO:        Payoff = -2.58108e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:         *Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 831.
+INFO:        Optimizations = 6.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	779         	831         .
+INFO:        Iterations                    	4           	54          .
+INFO:         Baseline Natural Flux        	20000000    	20000000    .
+INFO:         Atmospheric Lifetime of N2O  	103.2466    	103.31187   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-13919.448  	-13862.493  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:         *Atmospheric Lifetime of N2O = 130.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 832.
+INFO:        Optimizations = 7.
+INFO:        Pass = 3.
+INFO:        Payoff = -3.04761e+06.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 1027.
+INFO:        Optimizations = 7.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	1006        	1027        .
+INFO:        Iterations                    	11          	67          .
+INFO:         Baseline Natural Flux        	20000000    	20000000    .
+INFO:         Atmospheric Lifetime of N2O  	103.34832   	103.34832   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	1.6940659e-21	1.6940659e-21.
+INFO:        Payoff                        	-13851.072  	-13851.072  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 130.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.04.
+INFO:        Simulations = 1028.
+INFO:        Optimizations = 8.
+INFO:        Pass = 3.
+INFO:        Payoff = -4.08785e+06.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:         *Atmospheric Lifetime of N2O = 103.369.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 1248.
+INFO:        Optimizations = 8.
+INFO:        Pass = 3.
+INFO:        Payoff = -13851.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	1076        	1248        .
+INFO:        Iterations                    	4           	82          .
+INFO:         Baseline Natural Flux        	15048234    	20000000    .
+INFO:         Atmospheric Lifetime of N2O  	130         	103.34832   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-28680.216  	-13851.072  .
+INFO:        ==============================.
+INFO:        Initial point of search.
+INFO:          Baseline Natural Flux = 6e+06.
+INFO:         *Atmospheric Lifetime of N2O = 50.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.02.
+INFO:        Simulations = 1249.
+INFO:        Optimizations = 9.
+INFO:        Pass = 3.
+INFO:        Payoff = -6.54092e+07.
+INFO:        ---------------------------------.
+INFO:        Maximum payoff found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.359.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 1330.
+INFO:        Optimizations = 9.
+INFO:        Pass = 3.
+INFO:        Payoff = -13850.5.
+INFO:        ---------------------------------.
+INFO:        This Search                   	Pass 1      	Final       .
+INFO:        Simulations                   	1309        	1330        .
+INFO:        Iterations                    	4           	88          .
+INFO:         Baseline Natural Flux        	20000000    	20000000    .
+INFO:         Atmospheric Lifetime of N2O  	103.35939   	103.35939   .
+INFO:         Effective Sensitivity of Temperature on N2O Flux	0           	0           .
+INFO:        Payoff                        	-13850.492  	-13850.492  .
+INFO:        ==============================.
+INFO:        Maximum of simulations/optimizations found at:.
+INFO:          Baseline Natural Flux = 2e+07.
+INFO:          Atmospheric Lifetime of N2O = 103.359.
+INFO:         *Effective Sensitivity of Temperature on N2O Flux = 0.
+INFO:        Simulations = 1330.
+INFO:        Optimizations = 9.
+INFO:        Pass = 3.
+INFO:        Payoff = -13850.5.
+INFO:        ---------------------------------.
